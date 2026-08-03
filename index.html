@@ -76,7 +76,7 @@
       font-size: 2.8rem;
       font-weight: 700;
       line-height: 1.2;
-      max-width: 800px;
+      max-width: 900px;
     }
 
     .hero h1 span {
@@ -90,7 +90,7 @@
       font-size: 1.2rem;
       color: #334155;
       margin-top: 1rem;
-      max-width: 700px;
+      max-width: 750px;
       background: #f1f5f9;
       padding: 0.8rem 1.5rem;
       border-radius: 60px;
@@ -101,6 +101,65 @@
     .hero p i {
       color: #2563eb;
       margin-right: 10px;
+    }
+
+    /* ROADMAP / HOW IT WORKS */
+    .roadmap-box {
+      background: #ffffff;
+      border-radius: 32px;
+      padding: 1.8rem 2rem;
+      margin: 1.8rem 0 0.8rem;
+      border: 1px solid #e2edff;
+      box-shadow: 0 6px 18px rgba(0, 20, 40, 0.02);
+    }
+
+    .roadmap-box h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 1rem;
+    }
+
+    .roadmap-box h3 i {
+      color: #2563eb;
+    }
+
+    .roadmap-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .roadmap-step {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+
+    .roadmap-step .step-num {
+      font-weight: 700;
+      color: #2563eb;
+      font-size: 1.3rem;
+      background: #eef4ff;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 30px;
+    }
+
+    .roadmap-step h4 {
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin-top: 0.2rem;
+    }
+
+    .roadmap-step p {
+      color: #475569;
+      font-size: 0.95rem;
     }
 
     /* product showcase grid */
@@ -185,7 +244,7 @@
       letter-spacing: 0.3px;
     }
 
-    /* why choose us / benefits */
+    /* WHY CHOOSE US / BENEFITS */
     .benefits-section {
       background: #ffffff;
       border-radius: 40px;
@@ -324,9 +383,12 @@
         flex-direction: column;
         align-items: start;
       }
+      .roadmap-grid {
+        grid-template-columns: 1fr;
+      }
     }
 
-    /* little extra style for blog look */
+    /* blog meta */
     .blog-meta {
       display: flex;
       gap: 12px;
@@ -346,19 +408,6 @@
       font-weight: 500;
       font-size: 0.8rem;
       color: #1e3a8a;
-    }
-
-    hr {
-      margin: 1rem 0;
-      border: none;
-      border-top: 2px dashed #dce3ef;
-    }
-
-    .flex-row {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
     }
 
     .wholesale-tag {
@@ -387,18 +436,48 @@
       </div>
     </header>
 
-    <!-- blog intro -->
+    <!-- ====== HERO with FULL ROADMAP ====== -->
     <section class="hero">
       <h1>
-        <span>Bulk order</span> · purchase & sell <br> with one partner
+        <span>Bulk order</span> · we purchase & sell <br> for you in the USA
       </h1>
       <p>
-        <i class="fas fa-arrow-right"></i> We handle bulk purchase in USA & sell your products 
+        <i class="fas fa-arrow-right"></i> We are your wholesale partner – you buy bulk, we sell your products in the USA
       </p>
       <div class="blog-meta">
         <span><i class="far fa-calendar-alt"></i> Aug 2026</span>
         <span><i class="far fa-user"></i> Wholesale team</span>
         <span class="tag-usa"><i class="fas fa-store"></i> B2B · USA</span>
+      </div>
+
+      <!-- ROADMAP / HOW IT WORKS (inside hero) -->
+      <div class="roadmap-box">
+        <h3><i class="fas fa-route"></i> How it works – your bulk roadmap</h3>
+        <div class="roadmap-grid">
+          <div class="roadmap-step">
+            <span class="step-num">1</span>
+            <h4>You purchase bulk</h4>
+            <p>Order large quantities from us – we source in USA.</p>
+          </div>
+          <div class="roadmap-step">
+            <span class="step-num">2</span>
+            <h4>We store & manage</h4>
+            <p>Your inventory is handled in our US warehouses.</p>
+          </div>
+          <div class="roadmap-step">
+            <span class="step-num">3</span>
+            <h4>We sell for you</h4>
+            <p>We market & sell your products across USA channels.</p>
+          </div>
+          <div class="roadmap-step">
+            <span class="step-num">4</span>
+            <h4>You earn</h4>
+            <p>Profit from wholesale margins – we handle everything.</p>
+          </div>
+        </div>
+        <p style="margin-top: 1rem; color: #1e3a8a; font-weight: 500; background: #eef4ff; padding: 0.3rem 1.2rem; border-radius: 40px; display: inline-block;">
+          <i class="fas fa-handshake" style="color:#2563eb;"></i> We are the wholeseller – you buy, we sell.
+        </p>
       </div>
     </section>
 
@@ -459,7 +538,7 @@
       <i class="fas fa-hand-holding-usd" style="color:#2563eb;"></i> wholesale partner
     </div>
 
-    <!-- WHY CHOOSE US + BENEFITS section -->
+    <!-- ====== WHY CHOOSE US + BENEFITS ====== -->
     <div class="benefits-section">
       <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 0.2rem;">
         <i class="fas fa-medal" style="font-size: 2.2rem; color: #2563eb;"></i>
@@ -537,11 +616,9 @@
   </div>
   <!-- end container -->
 
-  <!-- simple script to show alert for cta (enquiry) -->
   <script>
-    // optional: any interactive behaviour can be added.
-    // CTA already uses inline alert, but we keep this for future.
-    console.log('Bulk blog website ready.');
+    // CTA alert already inline. Keep clean.
+    console.log('BulkPulse · wholesale & sell ready.');
   </script>
 </body>
 </html>
