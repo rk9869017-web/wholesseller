@@ -1,568 +1,547 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>USA Bulk Wholesale · Trust & Speed</title>
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BulkPulse USA · wholesale & sell</title>
+  <!-- Font Awesome for icons (free) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
     }
 
     body {
-      font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
-      background: #f8fafc;
-      color: #0b1a2e;
+      background: #f8faff;
+      color: #1e293b;
       line-height: 1.6;
     }
 
     .container {
       max-width: 1280px;
       margin: 0 auto;
-      padding: 0 24px;
+      padding: 0 2rem;
     }
 
-    /* HEADER / NAV */
+    /* header / nav */
     .navbar {
-      background: #ffffff;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
-      padding: 16px 0;
-      border-bottom: 1px solid #e9edf2;
-    }
-
-    .nav-flex {
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 0;
       flex-wrap: wrap;
+      gap: 1rem;
+      border-bottom: 1px solid rgba(0,0,0,0.04);
     }
 
     .logo {
       font-size: 1.8rem;
       font-weight: 700;
       letter-spacing: -0.5px;
-    }
-
-    .logo span {
-      color: #1a5cff;
+      background: linear-gradient(145deg, #0b2b5c, #1a4a7a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
 
     .logo i {
-      color: #1a5cff;
+      -webkit-text-fill-color: #2563eb;
       margin-right: 6px;
     }
 
-    .nav-links {
-      display: flex;
-      gap: 28px;
-      font-weight: 500;
-    }
-
-    .nav-links a {
-      text-decoration: none;
-      color: #1e2a44;
-      transition: 0.2s;
-      font-size: 1rem;
-    }
-
-    .nav-links a:hover {
-      color: #1a5cff;
-    }
-
-    .btn-outline {
-      border: 1px solid #1a5cff;
-      padding: 8px 20px;
+    .nav-tag {
+      background: #eef2ff;
+      padding: 0.5rem 1.2rem;
       border-radius: 40px;
-      color: #1a5cff;
-      background: transparent;
-      font-weight: 600;
-      transition: 0.2s;
+      font-weight: 500;
+      font-size: 0.95rem;
+      color: #1e3a8a;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.02);
     }
 
-    .btn-outline:hover {
-      background: #1a5cff;
-      color: white;
+    .nav-tag i {
+      margin-right: 8px;
+      color: #2563eb;
     }
 
-    /* HERO / WHY US */
+    /* hero / blog intro */
     .hero {
-      padding: 60px 0 40px;
-      background: linear-gradient(145deg, #ffffff 0%, #f2f6fe 100%);
-      border-radius: 0 0 40px 40px;
-      margin-bottom: 30px;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      align-items: center;
+      padding: 2.5rem 0 1.5rem 0;
     }
 
     .hero h1 {
       font-size: 2.8rem;
       font-weight: 700;
       line-height: 1.2;
-      margin-bottom: 20px;
+      max-width: 800px;
     }
 
-    .hero h1 i {
-      color: #1a5cff;
-      margin-right: 10px;
+    .hero h1 span {
+      background: linear-gradient(120deg, #1e3a8a, #3b82f6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
 
     .hero p {
       font-size: 1.2rem;
-      color: #2a3b5e;
-      margin-bottom: 24px;
-    }
-
-    .badge-group {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 18px;
-      margin: 28px 0;
-    }
-
-    .badge {
-      background: white;
-      padding: 12px 20px;
+      color: #334155;
+      margin-top: 1rem;
+      max-width: 700px;
+      background: #f1f5f9;
+      padding: 0.8rem 1.5rem;
       border-radius: 60px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.02);
-      font-weight: 500;
-      border: 1px solid #dfe6ef;
+      display: inline-block;
+      backdrop-filter: blur(2px);
     }
 
-    .badge i {
-      color: #1a5cff;
-      margin-right: 8px;
+    .hero p i {
+      color: #2563eb;
+      margin-right: 10px;
     }
 
-    .hero-image {
-      background: #dce5f5;
-      border-radius: 32px;
-      padding: 30px;
-      text-align: center;
-      min-height: 200px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%231a5cff" opacity="0.1"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>');
-      background-repeat: no-repeat;
-      background-position: 90% 90%;
-      background-size: 70px;
-    }
-
-    .hero-image h3 {
-      font-size: 2rem;
-      color: #0b1a2e;
-    }
-
-    .hero-image p {
-      font-size: 1rem;
-      color: #1f3a6b;
-    }
-
-    /* CHALLENGES (negative points) */
-    .challenges {
-      background: #fff5f5;
-      border-left: 6px solid #e53e3e;
-      padding: 24px 30px;
-      border-radius: 20px;
-      margin: 20px 0 40px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px 40px;
-    }
-
-    .challenge-item {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-weight: 500;
-    }
-
-    .challenge-item i {
-      color: #c53030;
-      font-size: 1.2rem;
-    }
-
-    .challenge-item span {
-      color: #2d3748;
-    }
-
-    /* BLOG / WHY US SECTION */
+    /* product showcase grid */
     .section-title {
-      font-size: 2.2rem;
-      font-weight: 700;
-      margin: 40px 0 20px;
+      font-size: 2rem;
+      font-weight: 600;
+      margin: 2.5rem 0 1.5rem 0;
       display: flex;
       align-items: center;
       gap: 12px;
     }
 
     .section-title i {
-      color: #1a5cff;
+      color: #2563eb;
+      font-size: 2rem;
     }
 
-    .why-us-grid {
+    .product-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 30px;
-      margin: 30px 0 40px;
-    }
-
-    .why-card {
-      background: white;
-      padding: 28px 20px;
-      border-radius: 28px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.02);
-      border: 1px solid #eef2f8;
-      transition: 0.2s;
-    }
-
-    .why-card:hover {
-      border-color: #1a5cff;
-      box-shadow: 0 12px 28px rgba(26, 92, 255, 0.06);
-    }
-
-    .why-card i {
-      font-size: 2.4rem;
-      color: #1a5cff;
-      margin-bottom: 16px;
-    }
-
-    .why-card h3 {
-      font-size: 1.4rem;
-      margin-bottom: 10px;
-    }
-
-    .why-card p {
-      color: #3a4b6e;
-    }
-
-    /* PRODUCT SAMPLES */
-    .products-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 28px;
-      margin: 30px 0 50px;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 2rem;
+      margin: 1.5rem 0 2.5rem 0;
     }
 
     .product-card {
-      background: white;
+      background: #ffffff;
       border-radius: 28px;
-      padding: 20px 16px 24px;
-      border: 1px solid #e6edf6;
+      padding: 1.8rem 1.2rem 1.5rem;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.04), 0 4px 10px rgba(0, 20, 50, 0.02);
+      transition: all 0.25s ease;
+      border: 1px solid #f0f3fe;
       text-align: center;
-      transition: 0.2s;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.02);
     }
 
     .product-card:hover {
-      transform: translateY(-6px);
-      border-color: #b3c9ff;
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(37, 99, 235, 0.08);
+      border-color: #dbe7fe;
     }
 
-    .product-img {
-      background: #eef4ff;
-      height: 120px;
-      border-radius: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    .product-icon {
       font-size: 3.2rem;
-      color: #1a5cff;
-      margin-bottom: 14px;
-    }
-
-    .product-card h4 {
-      font-size: 1.2rem;
-      margin-bottom: 6px;
-    }
-
-    .product-card .price {
-      font-weight: 600;
-      color: #1a5cff;
-      font-size: 1.1rem;
-    }
-
-    .product-card .bulk-badge {
-      background: #e9effa;
-      padding: 4px 12px;
+      color: #2563eb;
+      background: #eef4ff;
+      width: 80px;
+      height: 80px;
+      line-height: 80px;
       border-radius: 60px;
-      font-size: 0.8rem;
+      margin: 0 auto 1rem;
+    }
+
+    .product-card h3 {
+      font-size: 1.4rem;
       font-weight: 600;
-      color: #1a3d7a;
+      margin-bottom: 0.3rem;
+    }
+
+    .product-card .price-tag {
+      font-weight: 600;
+      color: #0b2b5c;
+      background: #f1f6fe;
+      padding: 0.2rem 1rem;
+      border-radius: 30px;
       display: inline-block;
-      margin-top: 10px;
+      font-size: 0.9rem;
+      margin: 0.5rem 0 0.8rem;
     }
 
-    /* BULK / WHOLESALE CTA */
-    .bulk-cta {
-      background: #0b1a2e;
-      color: white;
-      padding: 40px 40px;
-      border-radius: 48px;
-      margin: 30px 0 50px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
+    .product-card p {
+      color: #475569;
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
     }
 
-    .bulk-cta h2 {
-      font-size: 1.8rem;
+    .badge-bulk {
+      background: #dbeafe;
+      color: #1e3a8a;
       font-weight: 600;
+      font-size: 0.75rem;
+      padding: 0.2rem 0.8rem;
+      border-radius: 30px;
+      letter-spacing: 0.3px;
     }
 
-    .bulk-cta h2 i {
-      color: #ffd966;
-      margin-right: 12px;
+    /* why choose us / benefits */
+    .benefits-section {
+      background: #ffffff;
+      border-radius: 40px;
+      padding: 2.5rem 2rem;
+      margin: 2.5rem 0;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.02);
+      border: 1px solid #e9effa;
     }
 
-    .bulk-cta p {
-      opacity: 0.8;
-      max-width: 500px;
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      margin-top: 1.5rem;
     }
 
-    .btn-primary {
-      background: #1a5cff;
-      border: none;
-      padding: 14px 40px;
-      border-radius: 60px;
+    .benefit-item {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .benefit-item i {
+      font-size: 2.4rem;
+      color: #2563eb;
+      background: #eef4ff;
+      padding: 0.6rem;
+      border-radius: 20px;
+      margin-bottom: 0.8rem;
+    }
+
+    .benefit-item h4 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+    }
+
+    .benefit-item p {
+      color: #475569;
+      font-size: 0.95rem;
+    }
+
+    /* CTA + enquiry */
+    .cta-section {
+      background: linear-gradient(135deg, #0b2b5c 0%, #1a4a7a 100%);
+      border-radius: 48px;
+      padding: 3rem 2.5rem;
+      margin: 3rem 0 2.5rem;
       color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .cta-section h2 {
+      font-size: 2.2rem;
+      font-weight: 600;
+      letter-spacing: -0.3px;
+    }
+
+    .cta-section p {
+      max-width: 550px;
+      font-size: 1.1rem;
+      opacity: 0.85;
+      margin: 0.5rem 0 1.8rem;
+    }
+
+    .cta-btn {
+      background: white;
+      border: none;
+      color: #0b2b5c;
       font-weight: 700;
-      font-size: 1rem;
+      font-size: 1.2rem;
+      padding: 0.9rem 2.8rem;
+      border-radius: 60px;
       display: inline-flex;
       align-items: center;
-      gap: 10px;
+      gap: 14px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
       transition: 0.2s;
-      cursor: default;
-    }
-
-    .btn-primary i {
-      color: white;
-    }
-
-    /* FOOTER */
-    footer {
-      border-top: 1px solid #dde3ec;
-      padding: 30px 0 20px;
-      margin-top: 30px;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 20px;
-      color: #3f5277;
-    }
-
-    .footer-links a {
-      color: #1e2a44;
+      cursor: pointer;
       text-decoration: none;
-      margin-left: 24px;
     }
 
-    .footer-links a:hover {
-      color: #1a5cff;
+    .cta-btn i {
+      font-size: 1.4rem;
     }
 
-    /* RESPONSIVE */
-    @media (max-width: 850px) {
-      .hero-grid {
-        grid-template-columns: 1fr;
-      }
+    .cta-btn:hover {
+      transform: scale(1.02);
+      background: #f0f7ff;
+      box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+    }
 
+    .enquiry-note {
+      margin-top: 1.2rem;
+      font-size: 0.9rem;
+      opacity: 0.7;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* footer */
+    .footer {
+      text-align: center;
+      padding: 2rem 0 1.8rem;
+      border-top: 1px solid #e2e8f0;
+      margin-top: 1.5rem;
+      color: #475569;
+      font-size: 0.95rem;
+    }
+
+    .footer i {
+      color: #2563eb;
+      margin: 0 4px;
+    }
+
+    /* responsive */
+    @media (max-width: 700px) {
       .hero h1 {
-        font-size: 2.2rem;
+        font-size: 2rem;
       }
-
-      .nav-flex {
-        flex-direction: column;
-        gap: 12px;
-        align-items: stretch;
+      .hero p {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
       }
-
-      .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
+      .cta-section {
+        padding: 2rem 1.2rem;
       }
-
-      .bulk-cta {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-      }
-
-      .challenge-item {
-        width: 100%;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .hero h1 {
+      .cta-section h2 {
         font-size: 1.8rem;
       }
-
-      .section-title {
-        font-size: 1.7rem;
+      .navbar {
+        flex-direction: column;
+        align-items: start;
       }
+    }
+
+    /* little extra style for blog look */
+    .blog-meta {
+      display: flex;
+      gap: 12px;
+      color: #64748b;
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+    }
+
+    .blog-meta i {
+      margin-right: 4px;
+    }
+
+    .tag-usa {
+      background: #dbeafe;
+      padding: 0.2rem 1rem;
+      border-radius: 30px;
+      font-weight: 500;
+      font-size: 0.8rem;
+      color: #1e3a8a;
+    }
+
+    hr {
+      margin: 1rem 0;
+      border: none;
+      border-top: 2px dashed #dce3ef;
+    }
+
+    .flex-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .wholesale-tag {
+      background: #f1f5f9;
+      padding: 0.3rem 1.2rem;
+      border-radius: 30px;
+      font-weight: 500;
+      color: #1e293b;
+    }
+
+    .wholesale-tag i {
+      color: #2563eb;
     }
   </style>
 </head>
 <body>
+  <div class="container">
 
-<!-- NAV -->
-<nav class="navbar">
-  <div class="container nav-flex">
-    <div class="logo">
-      <i class="fas fa-cubes"></i> <span>Bulk</span>USA
-    </div>
-    <div class="nav-links">
-      <a href="#">Home</a>
-      <a href="#">Wholesale</a>
-      <a href="#">Blog</a>
-      <a href="#">Contact</a>
-      <a href="#" class="btn-outline"><i class="fas fa-user"></i> B2B portal</a>
-    </div>
-  </div>
-</nav>
-
-<!-- HERO + WHY US -->
-<section class="hero">
-  <div class="container hero-grid">
-    <div>
-      <h1><i class="fas fa-flag-usa"></i> Why US buyers choose us</h1>
-      <p><strong>Bulk purchasing · USA fulfillment · wholesale ready</strong></p>
-      <div class="badge-group">
-        <span class="badge"><i class="fas fa-check-circle"></i> No USA sales? We handle it</span>
-        <span class="badge"><i class="fas fa-truck"></i> 15-day shipping? We own it</span>
-        <span class="badge"><i class="fas fa-globe"></i> Website launch? We build it</span>
+    <!-- header / nav -->
+    <header class="navbar">
+      <div class="logo">
+        <i class="fas fa-boxes"></i> BulkPulse<span style="font-weight:300; -webkit-text-fill-color: #2563eb;">.</span>
       </div>
-      <!-- Negative points display -->
-      <div class="challenges">
-        <div class="challenge-item"><i class="fas fa-times-circle"></i> <span>Can't sell directly in USA? → We bulk-buy for you.</span></div>
-        <div class="challenge-item"><i class="fas fa-clock"></i> <span>15 days shipping? → Trust built with tracking & support.</span></div>
-        <div class="challenge-item"><i class="fas fa-lock"></i> <span>Gateway/trust issues? → We manage payment & fulfillment.</span></div>
+      <div class="nav-tag">
+        <i class="fas fa-flag-usa"></i> USA · bulk purchase & sell
       </div>
-      <p style="font-size: 1rem; color: #2f4470;"><i class="fas fa-arrow-right" style="color:#1a5cff;"></i> We are your wholesale partner — you focus on selling, we handle the rest.</p>
-    </div>
-    <div class="hero-image">
-      <h3><i class="fas fa-handshake"></i> USA wholesale</h3>
-      <p>Bulk orders · 100% US fulfillment · trusted by 200+ partners</p>
-      <div style="margin-top: 20px; font-size: 0.9rem; background: rgba(255,255,255,0.7); padding: 8px 16px; border-radius: 60px; display: inline-block;">⭐ 4.9/5 from US buyers</div>
-    </div>
-  </div>
-</section>
+    </header>
 
-<div class="container">
-
-  <!-- BLOG: WHY US (detailed) -->
-  <div class="section-title">
-    <i class="fas fa-pen-fancy"></i> Why US buyers purchase from us
-  </div>
-  <div class="why-us-grid">
-    <div class="why-card">
-      <i class="fas fa-warehouse"></i>
-      <h3>Bulk purchase + USA stock</h3>
-      <p>We buy in bulk and keep inventory in US warehouses. You get fast domestic shipping, not 15-day waits.</p>
-    </div>
-    <div class="why-card">
-      <i class="fas fa-shield-alt"></i>
-      <h3>Trust & gateway solved</h3>
-      <p>We handle payment gateways, fraud protection, and compliance. You get a white-label wholesale portal.</p>
-    </div>
-    <div class="why-card">
-      <i class="fas fa-sync-alt"></i>
-      <h3>End-to-end wholesale</h3>
-      <p>From bulk ordering to last-mile delivery. We manage logistics so you can scale without headaches.</p>
-    </div>
-    <div class="why-card">
-      <i class="fas fa-chart-line"></i>
-      <h3>USA market expertise</h3>
-      <p>Pricing, taxes, import — we know the US market. Your products stay competitive and compliant.</p>
-    </div>
-  </div>
-
-  <!-- SAMPLE PRODUCTS (4-5) -->
-  <div class="section-title">
-    <i class="fas fa-box-open"></i> Sample products · bulk wholesale
-  </div>
-  <div class="products-grid">
-    <div class="product-card">
-      <div class="product-img"><i class="fas fa-headphones"></i></div>
-      <h4>Wireless Pro</h4>
-      <div class="price">$28.50</div>
-      <span class="bulk-badge">MOQ 50 pcs</span>
-    </div>
-    <div class="product-card">
-      <div class="product-img"><i class="fas fa-watch"></i></div>
-      <h4>Fitness Band</h4>
-      <div class="price">$42.00</div>
-      <span class="bulk-badge">MOQ 30 pcs</span>
-    </div>
-    <div class="product-card">
-      <div class="product-img"><i class="fas fa-mug-hot"></i></div>
-      <h4>Smart Mug</h4>
-      <div class="price">$19.90</div>
-      <span class="bulk-badge">MOQ 80 pcs</span>
-    </div>
-    <div class="product-card">
-      <div class="product-img"><i class="fas fa-laptop"></i></div>
-      <h4>USB-C Hub</h4>
-      <div class="price">$34.25</div>
-      <span class="bulk-badge">MOQ 40 pcs</span>
-    </div>
-    <div class="product-card">
-      <div class="product-img"><i class="fas fa-shoe-prints"></i></div>
-      <h4>Ergo Slippers</h4>
-      <div class="price">$16.80</div>
-      <span class="bulk-badge">MOQ 60 pcs</span>
-    </div>
-  </div>
-
-  <!-- BULK WHOLESALE CTA -->
-  <div class="bulk-cta">
-    <div>
-      <h2><i class="fas fa-tags"></i> Bulk wholesale program</h2>
-      <p>We purchase in bulk from USA suppliers and pass the savings to you. You get a dedicated wholesale dashboard with live inventory.</p>
-    </div>
-    <div>
-      <span class="btn-primary"><i class="fas fa-store"></i> Become a wholesaler</span>
-    </div>
-  </div>
-
-  <!-- BLOG POST: additional trust & shipping -->
-  <div style="background: white; border-radius: 32px; padding: 28px 30px; border: 1px solid #eaf0f8; margin: 30px 0;">
-    <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center;">
-      <div style="flex:2; min-width: 240px;">
-        <h3 style="font-size: 1.6rem; display: flex; gap: 10px;"><i class="fas fa-ship" style="color:#1a5cff;"></i> Shipping & trust: our promise</h3>
-        <p><i class="fas fa-check-circle" style="color:#1a5cff;"></i> <strong>15-day shipping?</strong> We provide end-to-end tracking, insurance, and USA-based customer support. <br>
-        <i class="fas fa-check-circle" style="color:#1a5cff;"></i> <strong>Gateway issues?</strong> We use Stripe, PayPal & ACH — fully compliant. <br>
-        <i class="fas fa-check-circle" style="color:#1a5cff;"></i> <strong>Website launch?</strong> We build your wholesale storefront (HTML/CSS + backend ready).</p>
+    <!-- blog intro -->
+    <section class="hero">
+      <h1>
+        <span>Bulk order</span> · purchase & sell <br> with one partner
+      </h1>
+      <p>
+        <i class="fas fa-arrow-right"></i> We handle bulk purchase in USA & sell your products 
+      </p>
+      <div class="blog-meta">
+        <span><i class="far fa-calendar-alt"></i> Aug 2026</span>
+        <span><i class="far fa-user"></i> Wholesale team</span>
+        <span class="tag-usa"><i class="fas fa-store"></i> B2B · USA</span>
       </div>
-      <div style="flex:1; background: #eef4ff; border-radius: 48px; padding: 16px 24px; text-align: center;">
-        <i class="fas fa-star" style="color: #fbbf24;"></i> <span style="font-weight:600;">4.9/5</span> <span style="color:#2f4470;">from 120+ US wholesalers</span>
+    </section>
+
+    <!-- product showcase: 4-5 products -->
+    <div class="section-title">
+      <i class="fas fa-cube"></i> Featured bulk products
+      <span class="wholesale-tag"><i class="fas fa-tag"></i> wholesale ready</span>
+    </div>
+
+    <div class="product-grid">
+      <!-- product 1 -->
+      <div class="product-card">
+        <div class="product-icon"><i class="fas fa-laptop"></i></div>
+        <h3>TechBundle</h3>
+        <div class="price-tag">$149 / unit</div>
+        <p>USB hubs · cables · chargers</p>
+        <span class="badge-bulk"><i class="fas fa-box"></i> bulk 50+</span>
+      </div>
+      <!-- product 2 -->
+      <div class="product-card">
+        <div class="product-icon"><i class="fas fa-tshirt"></i></div>
+        <h3>Fleece hoodies</h3>
+        <div class="price-tag">$32 / unit</div>
+        <p>6 colors · unisex S-XXL</p>
+        <span class="badge-bulk"><i class="fas fa-box"></i> bulk 100+</span>
+      </div>
+      <!-- product 3 -->
+      <div class="product-card">
+        <div class="product-icon"><i class="fas fa-blender-phone"></i></div>
+        <h3>HomeGadget</h3>
+        <div class="price-tag">$87 / unit</div>
+        <p>smart plugs · bulbs · hubs</p>
+        <span class="badge-bulk"><i class="fas fa-box"></i> bulk 40+</span>
+      </div>
+      <!-- product 4 -->
+      <div class="product-card">
+        <div class="product-icon"><i class="fas fa-dumbbell"></i></div>
+        <h3>FitGear pro</h3>
+        <div class="price-tag">$59 / unit</div>
+        <p>resistance bands · mats</p>
+        <span class="badge-bulk"><i class="fas fa-box"></i> bulk 60+</span>
+      </div>
+      <!-- product 5 -->
+      <div class="product-card">
+        <div class="product-icon"><i class="fas fa-coffee"></i></div>
+        <h3>Mug & flask</h3>
+        <div class="price-tag">$18 / unit</div>
+        <p>insulated · 12 oz · custom</p>
+        <span class="badge-bulk"><i class="fas fa-box"></i> bulk 80+</span>
       </div>
     </div>
+
+    <!-- small note: bulk purchase USA & sell -->
+    <div style="background: #eef4ff; border-radius: 40px; padding: 0.8rem 1.8rem; display: inline-block; margin-bottom: 0.5rem;">
+      <i class="fas fa-sync-alt" style="color:#2563eb; margin-right: 10px;"></i>
+      <strong>You purchase bulk in USA · we sell for you</strong> 
+      <span style="margin:0 8px;">|</span> 
+      <i class="fas fa-hand-holding-usd" style="color:#2563eb;"></i> wholesale partner
+    </div>
+
+    <!-- WHY CHOOSE US + BENEFITS section -->
+    <div class="benefits-section">
+      <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 0.2rem;">
+        <i class="fas fa-medal" style="font-size: 2.2rem; color: #2563eb;"></i>
+        <h2 style="font-size: 1.9rem; font-weight: 600;">Why choose us</h2>
+      </div>
+      <p style="color: #475569; margin-bottom: 0.8rem; font-size: 1rem;">
+        <i class="fas fa-chevron-right" style="color: #2563eb; font-size: 0.8rem;"></i> 
+        We are your end-to-end bulk partner in the USA
+      </p>
+
+      <div class="benefits-grid">
+        <div class="benefit-item">
+          <i class="fas fa-flag-usa"></i>
+          <h4>USA based</h4>
+          <p>Local sourcing & warehousing</p>
+        </div>
+        <div class="benefit-item">
+          <i class="fas fa-handshake"></i>
+          <h4>Bulk purchase</h4>
+          <p>We buy at scale & pass savings</p>
+        </div>
+        <div class="benefit-item">
+          <i class="fas fa-store-alt"></i>
+          <h4>Sell for you</h4>
+          <p>Full sales & distribution support</p>
+        </div>
+        <div class="benefit-item">
+          <i class="fas fa-chart-line"></i>
+          <h4>Wholesale margins</h4>
+          <p>Transparent pricing · higher ROI</p>
+        </div>
+        <div class="benefit-item">
+          <i class="fas fa-truck-fast"></i>
+          <h4>Logistics</h4>
+          <p>Shipping & fulfillment included</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA + enquiry section -->
+    <div class="cta-section">
+      <h2><i class="fas fa-paper-plane" style="margin-right: 12px;"></i>Ready to bulk order & sell?</h2>
+      <p>We handle purchase in USA and sell your products. Enquiry now – let's grow together.</p>
+      <a href="#" class="cta-btn" onclick="alert('📩 Enquiry form: bulk@bulkpulse.com \nOr call +1 (555) 278-9900'); return false;">
+        <i class="fas fa-envelope"></i> Enquiry now
+      </a>
+      <div class="enquiry-note">
+        <i class="fas fa-phone-alt"></i> +1 (555) 278-9900 · 
+        <i class="fas fa-clock"></i> 9 AM – 8 PM EST
+      </div>
+    </div>
+
+    <!-- small blog note: we are wholeseller -->
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 20px; background: #f8fcff; border-radius: 60px; padding: 0.8rem 1.2rem; margin: 0.5rem 0;">
+      <span><i class="fas fa-check-circle" style="color: #2563eb;"></i> Wholesale partner</span>
+      <span><i class="fas fa-check-circle" style="color: #2563eb;"></i> Bulk purchase USA</span>
+      <span><i class="fas fa-check-circle" style="color: #2563eb;"></i> We sell for you</span>
+      <span><i class="fas fa-check-circle" style="color: #2563eb;"></i> 4-5 products show</span>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+      <p>
+        <i class="fas fa-box-open"></i> BulkPulse · wholesale & bulk solutions 
+        <span style="margin:0 8px;">|</span> 
+        <i class="fas fa-flag-usa"></i> USA operations 
+        <span style="margin:0 8px;">|</span> 
+        <i class="fas fa-envelope"></i> bulk@bulkpulse.com
+      </p>
+      <p style="margin-top: 0.4rem; font-size: 0.85rem; opacity: 0.7;">
+        <i class="fas fa-rotate-left"></i> You purchase bulk from USA · we sell your products 
+      </p>
+    </footer>
+
   </div>
+  <!-- end container -->
 
-</div>
-
-<!-- FOOTER -->
-<footer class="container">
-  <div>© 2026 BulkUSA · wholesale partner for US sellers</div>
-  <div class="footer-links">
-    <a href="#">Blog</a>
-    <a href="#">Wholesale terms</a>
-    <a href="#">Contact</a>
-    <a href="#"><i class="fas fa-arrow-up"></i></a>
-  </div>
-</footer>
-
+  <!-- simple script to show alert for cta (enquiry) -->
+  <script>
+    // optional: any interactive behaviour can be added.
+    // CTA already uses inline alert, but we keep this for future.
+    console.log('Bulk blog website ready.');
+  </script>
 </body>
 </html>
