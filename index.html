@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes" />
   <title>BulkPulse USA · wholesale & sell</title>
   <!-- Font Awesome for icons (free) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
@@ -23,7 +23,7 @@
     .container {
       max-width: 1280px;
       margin: 0 auto;
-      padding: 0 2rem;
+      padding: 0 1.5rem;
     }
 
     /* header / nav */
@@ -31,14 +31,14 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 1.2rem 0;
+      padding: 1rem 0;
       flex-wrap: wrap;
-      gap: 1rem;
+      gap: 0.8rem;
       border-bottom: 1px solid rgba(0,0,0,0.04);
     }
 
     .logo {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       font-weight: 700;
       letter-spacing: -0.5px;
       background: linear-gradient(145deg, #0b2b5c, #1a4a7a);
@@ -54,26 +54,26 @@
 
     .nav-tag {
       background: #eef2ff;
-      padding: 0.5rem 1.2rem;
+      padding: 0.4rem 1rem;
       border-radius: 40px;
       font-weight: 500;
-      font-size: 0.95rem;
+      font-size: 0.85rem;
       color: #1e3a8a;
       box-shadow: 0 2px 6px rgba(0,0,0,0.02);
     }
 
     .nav-tag i {
-      margin-right: 8px;
+      margin-right: 6px;
       color: #2563eb;
     }
 
     /* hero / blog intro */
     .hero {
-      padding: 2.5rem 0 1.5rem 0;
+      padding: 1.8rem 0 1rem 0;
     }
 
     .hero h1 {
-      font-size: 2.8rem;
+      font-size: 2.2rem;
       font-weight: 700;
       line-height: 1.2;
       max-width: 900px;
@@ -87,12 +87,12 @@
     }
 
     .hero p {
-      font-size: 1.2rem;
+      font-size: 1rem;
       color: #334155;
-      margin-top: 1rem;
+      margin-top: 0.8rem;
       max-width: 750px;
       background: #f1f5f9;
-      padding: 0.8rem 1.5rem;
+      padding: 0.6rem 1.2rem;
       border-radius: 60px;
       display: inline-block;
       backdrop-filter: blur(2px);
@@ -100,26 +100,26 @@
 
     .hero p i {
       color: #2563eb;
-      margin-right: 10px;
+      margin-right: 8px;
     }
 
     /* ROADMAP / HOW IT WORKS */
     .roadmap-box {
       background: #ffffff;
-      border-radius: 32px;
-      padding: 1.8rem 2rem;
-      margin: 1.8rem 0 0.8rem;
+      border-radius: 28px;
+      padding: 1.5rem 1.5rem;
+      margin: 1.5rem 0 0.8rem;
       border: 1px solid #e2edff;
       box-shadow: 0 6px 18px rgba(0, 20, 40, 0.02);
     }
 
     .roadmap-box h3 {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       font-weight: 600;
       display: flex;
       align-items: center;
-      gap: 12px;
-      margin-bottom: 1rem;
+      gap: 10px;
+      margin-bottom: 0.8rem;
     }
 
     .roadmap-box h3 i {
@@ -128,23 +128,23 @@
 
     .roadmap-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1.2rem;
     }
 
     .roadmap-step {
       display: flex;
       flex-direction: column;
-      gap: 0.2rem;
+      gap: 0.1rem;
     }
 
     .roadmap-step .step-num {
       font-weight: 700;
       color: #2563eb;
-      font-size: 1.3rem;
+      font-size: 1.1rem;
       background: #eef4ff;
-      width: 36px;
-      height: 36px;
+      width: 32px;
+      height: 32px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -153,41 +153,42 @@
 
     .roadmap-step h4 {
       font-weight: 600;
-      font-size: 1.1rem;
-      margin-top: 0.2rem;
+      font-size: 1rem;
+      margin-top: 0.1rem;
     }
 
     .roadmap-step p {
       color: #475569;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
     }
 
     /* product showcase grid */
     .section-title {
-      font-size: 2rem;
+      font-size: 1.6rem;
       font-weight: 600;
-      margin: 2.5rem 0 1.5rem 0;
+      margin: 2rem 0 1.2rem 0;
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
+      flex-wrap: wrap;
     }
 
     .section-title i {
       color: #2563eb;
-      font-size: 2rem;
+      font-size: 1.6rem;
     }
 
     .product-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 2rem;
-      margin: 1.5rem 0 2.5rem 0;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 1.5rem;
+      margin: 1.2rem 0 2rem 0;
     }
 
     .product-card {
       background: #ffffff;
-      border-radius: 28px;
-      padding: 1.8rem 1.2rem 1.5rem;
+      border-radius: 24px;
+      padding: 1.5rem 1rem 1.2rem;
       box-shadow: 0 12px 30px rgba(0, 0, 0, 0.04), 0 4px 10px rgba(0, 20, 50, 0.02);
       transition: all 0.25s ease;
       border: 1px solid #f0f3fe;
@@ -195,51 +196,51 @@
     }
 
     .product-card:hover {
-      transform: translateY(-8px);
+      transform: translateY(-6px);
       box-shadow: 0 20px 40px rgba(37, 99, 235, 0.08);
       border-color: #dbe7fe;
     }
 
     .product-icon {
-      font-size: 3.2rem;
+      font-size: 2.6rem;
       color: #2563eb;
       background: #eef4ff;
-      width: 80px;
-      height: 80px;
-      line-height: 80px;
-      border-radius: 60px;
-      margin: 0 auto 1rem;
+      width: 70px;
+      height: 70px;
+      line-height: 70px;
+      border-radius: 50px;
+      margin: 0 auto 0.8rem;
     }
 
     .product-card h3 {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       font-weight: 600;
-      margin-bottom: 0.3rem;
+      margin-bottom: 0.2rem;
     }
 
     .product-card .price-tag {
       font-weight: 600;
       color: #0b2b5c;
       background: #f1f6fe;
-      padding: 0.2rem 1rem;
+      padding: 0.1rem 0.8rem;
       border-radius: 30px;
       display: inline-block;
-      font-size: 0.9rem;
-      margin: 0.5rem 0 0.8rem;
+      font-size: 0.8rem;
+      margin: 0.3rem 0 0.5rem;
     }
 
     .product-card p {
       color: #475569;
-      font-size: 0.95rem;
-      margin-bottom: 0.5rem;
+      font-size: 0.85rem;
+      margin-bottom: 0.4rem;
     }
 
     .badge-bulk {
       background: #dbeafe;
       color: #1e3a8a;
       font-weight: 600;
-      font-size: 0.75rem;
-      padding: 0.2rem 0.8rem;
+      font-size: 0.7rem;
+      padding: 0.15rem 0.7rem;
       border-radius: 30px;
       letter-spacing: 0.3px;
     }
@@ -247,18 +248,18 @@
     /* WHY CHOOSE US / BENEFITS */
     .benefits-section {
       background: #ffffff;
-      border-radius: 40px;
-      padding: 2.5rem 2rem;
-      margin: 2.5rem 0;
+      border-radius: 32px;
+      padding: 2rem 1.5rem;
+      margin: 2rem 0;
       box-shadow: 0 8px 30px rgba(0,0,0,0.02);
       border: 1px solid #e9effa;
     }
 
     .benefits-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 2rem;
-      margin-top: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.2rem;
     }
 
     .benefit-item {
@@ -268,31 +269,31 @@
     }
 
     .benefit-item i {
-      font-size: 2.4rem;
+      font-size: 2rem;
       color: #2563eb;
       background: #eef4ff;
-      padding: 0.6rem;
-      border-radius: 20px;
-      margin-bottom: 0.8rem;
+      padding: 0.5rem;
+      border-radius: 18px;
+      margin-bottom: 0.6rem;
     }
 
     .benefit-item h4 {
-      font-size: 1.2rem;
+      font-size: 1.05rem;
       font-weight: 600;
-      margin-bottom: 0.2rem;
+      margin-bottom: 0.1rem;
     }
 
     .benefit-item p {
       color: #475569;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
     }
 
     /* CTA + enquiry */
     .cta-section {
       background: linear-gradient(135deg, #0b2b5c 0%, #1a4a7a 100%);
-      border-radius: 48px;
-      padding: 3rem 2.5rem;
-      margin: 3rem 0 2.5rem;
+      border-radius: 40px;
+      padding: 2.5rem 1.8rem;
+      margin: 2.5rem 0 2rem;
       color: white;
       display: flex;
       flex-direction: column;
@@ -301,16 +302,16 @@
     }
 
     .cta-section h2 {
-      font-size: 2.2rem;
+      font-size: 1.8rem;
       font-weight: 600;
       letter-spacing: -0.3px;
     }
 
     .cta-section p {
-      max-width: 550px;
-      font-size: 1.1rem;
+      max-width: 500px;
+      font-size: 1rem;
       opacity: 0.85;
-      margin: 0.5rem 0 1.8rem;
+      margin: 0.4rem 0 1.5rem;
     }
 
     .cta-btn {
@@ -318,12 +319,12 @@
       border: none;
       color: #0b2b5c;
       font-weight: 700;
-      font-size: 1.2rem;
-      padding: 0.9rem 2.8rem;
+      font-size: 1.05rem;
+      padding: 0.75rem 2.2rem;
       border-radius: 60px;
       display: inline-flex;
       align-items: center;
-      gap: 14px;
+      gap: 12px;
       box-shadow: 0 8px 20px rgba(0,0,0,0.15);
       transition: 0.2s;
       cursor: pointer;
@@ -331,7 +332,7 @@
     }
 
     .cta-btn i {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
     }
 
     .cta-btn:hover {
@@ -341,22 +342,24 @@
     }
 
     .enquiry-note {
-      margin-top: 1.2rem;
-      font-size: 0.9rem;
+      margin-top: 1rem;
+      font-size: 0.85rem;
       opacity: 0.7;
       display: flex;
       align-items: center;
       gap: 6px;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     /* footer */
     .footer {
       text-align: center;
-      padding: 2rem 0 1.8rem;
+      padding: 1.8rem 0 1.5rem;
       border-top: 1px solid #e2e8f0;
-      margin-top: 1.5rem;
+      margin-top: 1.2rem;
       color: #475569;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
     }
 
     .footer i {
@@ -364,37 +367,14 @@
       margin: 0 4px;
     }
 
-    /* responsive */
-    @media (max-width: 700px) {
-      .hero h1 {
-        font-size: 2rem;
-      }
-      .hero p {
-        font-size: 1rem;
-        padding: 0.6rem 1.2rem;
-      }
-      .cta-section {
-        padding: 2rem 1.2rem;
-      }
-      .cta-section h2 {
-        font-size: 1.8rem;
-      }
-      .navbar {
-        flex-direction: column;
-        align-items: start;
-      }
-      .roadmap-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
     /* blog meta */
     .blog-meta {
       display: flex;
-      gap: 12px;
+      gap: 10px;
       color: #64748b;
-      font-size: 0.9rem;
-      margin-top: 0.5rem;
+      font-size: 0.8rem;
+      margin-top: 0.4rem;
+      flex-wrap: wrap;
     }
 
     .blog-meta i {
@@ -403,72 +383,74 @@
 
     .tag-usa {
       background: #dbeafe;
-      padding: 0.2rem 1rem;
+      padding: 0.15rem 0.8rem;
       border-radius: 30px;
       font-weight: 500;
-      font-size: 0.8rem;
+      font-size: 0.75rem;
       color: #1e3a8a;
     }
 
     .wholesale-tag {
       background: #f1f5f9;
-      padding: 0.3rem 1.2rem;
+      padding: 0.2rem 1rem;
       border-radius: 30px;
       font-weight: 500;
       color: #1e293b;
+      font-size: 0.85rem;
     }
 
     .wholesale-tag i {
       color: #2563eb;
     }
 
-    /* ---- NEW: detailed content section (800+ words) ---- */
+    /* ---- DETAILED CONTENT (800+ words) ---- */
     .detail-content {
       background: #ffffff;
-      border-radius: 36px;
-      padding: 2.5rem 2.5rem;
-      margin: 2.5rem 0;
+      border-radius: 32px;
+      padding: 2rem 1.5rem;
+      margin: 2rem 0;
       border: 1px solid #ecf3ff;
       box-shadow: 0 6px 18px rgba(0, 20, 40, 0.02);
     }
 
     .detail-content h2 {
-      font-size: 2rem;
+      font-size: 1.7rem;
       font-weight: 700;
-      margin-bottom: 1.2rem;
+      margin-bottom: 1rem;
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
+      flex-wrap: wrap;
     }
 
     .detail-content h2 i {
       color: #2563eb;
-      font-size: 2rem;
+      font-size: 1.7rem;
     }
 
     .detail-content h3 {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       font-weight: 600;
-      margin: 1.8rem 0 0.8rem;
+      margin: 1.4rem 0 0.6rem;
       color: #0b2b5c;
     }
 
     .detail-content p {
       color: #1e293b;
-      font-size: 1.05rem;
-      margin-bottom: 1rem;
+      font-size: 0.98rem;
+      margin-bottom: 0.8rem;
       line-height: 1.7;
     }
 
     .detail-content ul {
-      margin: 0.8rem 0 1.5rem 1.8rem;
+      margin: 0.6rem 0 1.2rem 1.2rem;
     }
 
     .detail-content ul li {
-      margin-bottom: 0.5rem;
-      font-size: 1.02rem;
+      margin-bottom: 0.4rem;
+      font-size: 0.95rem;
       list-style-type: '✓ ';
-      padding-left: 0.5rem;
+      padding-left: 0.4rem;
       color: #1e293b;
     }
 
@@ -479,17 +461,190 @@
 
     .detail-highlight {
       background: #eef4ff;
-      padding: 1.2rem 2rem;
-      border-radius: 60px;
+      padding: 1rem 1.5rem;
+      border-radius: 40px;
       display: inline-block;
-      margin: 1rem 0 0.5rem;
+      margin: 0.8rem 0 0.3rem;
       font-weight: 500;
       color: #0b2b5c;
+      font-size: 0.95rem;
     }
 
     .detail-highlight i {
       color: #2563eb;
-      margin-right: 12px;
+      margin-right: 10px;
+    }
+
+    /* ----- MOBILE RESPONSIVE TWEAKS ----- */
+    @media (max-width: 700px) {
+      .container {
+        padding: 0 1rem;
+      }
+
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+      .hero p {
+        font-size: 0.95rem;
+        padding: 0.5rem 1rem;
+      }
+
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .logo {
+        font-size: 1.4rem;
+      }
+      .nav-tag {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.8rem;
+      }
+
+      .roadmap-box {
+        padding: 1.2rem 1rem;
+      }
+      .roadmap-box h3 {
+        font-size: 1.1rem;
+      }
+      .roadmap-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.8rem;
+      }
+      .roadmap-step .step-num {
+        width: 28px;
+        height: 28px;
+        font-size: 1rem;
+      }
+      .roadmap-step h4 {
+        font-size: 0.9rem;
+      }
+      .roadmap-step p {
+        font-size: 0.8rem;
+      }
+
+      .section-title {
+        font-size: 1.3rem;
+        margin: 1.5rem 0 1rem;
+      }
+      .section-title i {
+        font-size: 1.3rem;
+      }
+
+      .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+      }
+      .product-card {
+        padding: 1.2rem 0.8rem 1rem;
+      }
+      .product-icon {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 2.2rem;
+      }
+      .product-card h3 {
+        font-size: 1rem;
+      }
+
+      .benefits-section {
+        padding: 1.5rem 1rem;
+      }
+      .benefits-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+      }
+      .benefit-item i {
+        font-size: 1.6rem;
+        padding: 0.4rem;
+      }
+      .benefit-item h4 {
+        font-size: 0.95rem;
+      }
+      .benefit-item p {
+        font-size: 0.8rem;
+      }
+
+      .cta-section {
+        padding: 2rem 1.2rem;
+        border-radius: 32px;
+      }
+      .cta-section h2 {
+        font-size: 1.5rem;
+      }
+      .cta-section p {
+        font-size: 0.95rem;
+      }
+      .cta-btn {
+        font-size: 0.95rem;
+        padding: 0.65rem 1.8rem;
+      }
+      .enquiry-note {
+        font-size: 0.8rem;
+      }
+
+      .detail-content {
+        padding: 1.5rem 1rem;
+      }
+      .detail-content h2 {
+        font-size: 1.4rem;
+      }
+      .detail-content h3 {
+        font-size: 1.05rem;
+      }
+      .detail-content p {
+        font-size: 0.92rem;
+      }
+      .detail-content ul li {
+        font-size: 0.88rem;
+      }
+      .detail-highlight {
+        font-size: 0.85rem;
+        padding: 0.8rem 1.2rem;
+      }
+
+      .footer {
+        font-size: 0.8rem;
+        padding: 1.2rem 0;
+      }
+
+      .blog-meta {
+        font-size: 0.75rem;
+        gap: 6px;
+      }
+      .wholesale-tag {
+        font-size: 0.75rem;
+        padding: 0.15rem 0.8rem;
+      }
+
+      /* small note inline */
+      .small-note-inline {
+        padding: 0.5rem 1rem !important;
+        font-size: 0.85rem !important;
+        display: block !important;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .roadmap-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.6rem;
+      }
+      .benefits-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.8rem;
+      }
+      .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      }
+      .hero h1 {
+        font-size: 1.5rem;
+      }
+      .container {
+        padding: 0 0.8rem;
+      }
     }
   </style>
 </head>
@@ -545,7 +700,7 @@
             <p>Profit from wholesale margins – we handle everything.</p>
           </div>
         </div>
-        <p style="margin-top: 1rem; color: #1e3a8a; font-weight: 500; background: #eef4ff; padding: 0.3rem 1.2rem; border-radius: 40px; display: inline-block;">
+        <p style="margin-top: 0.8rem; color: #1e3a8a; font-weight: 500; background: #eef4ff; padding: 0.25rem 1rem; border-radius: 40px; display: inline-block; font-size: 0.9rem;">
           <i class="fas fa-handshake" style="color:#2563eb;"></i> We are the wholeseller – you buy, we sell.
         </p>
       </div>
@@ -601,14 +756,14 @@
     </div>
 
     <!-- small note: bulk purchase USA & sell -->
-    <div style="background: #eef4ff; border-radius: 40px; padding: 0.8rem 1.8rem; display: inline-block; margin-bottom: 0.5rem;">
-      <i class="fas fa-sync-alt" style="color:#2563eb; margin-right: 10px;"></i>
+    <div style="background: #eef4ff; border-radius: 40px; padding: 0.6rem 1.2rem; display: inline-block; margin-bottom: 0.3rem; font-size: 0.9rem;" class="small-note-inline">
+      <i class="fas fa-sync-alt" style="color:#2563eb; margin-right: 8px;"></i>
       <strong>You purchase bulk in USA · we sell for you</strong> 
-      <span style="margin:0 8px;">|</span> 
+      <span style="margin:0 6px;">|</span> 
       <i class="fas fa-hand-holding-usd" style="color:#2563eb;"></i> wholesale partner
     </div>
 
-    <!-- ====== NEW DETAILED CONTENT (800+ words) ====== -->
+    <!-- ====== DETAILED CONTENT (800+ words) ====== -->
     <div class="detail-content">
       <h2><i class="fas fa-file-alt"></i> The complete bulk ecosystem – how we power your business</h2>
       
@@ -664,12 +819,12 @@
 
     <!-- ====== WHY CHOOSE US + BENEFITS ====== -->
     <div class="benefits-section">
-      <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 0.2rem;">
-        <i class="fas fa-medal" style="font-size: 2.2rem; color: #2563eb;"></i>
-        <h2 style="font-size: 1.9rem; font-weight: 600;">Why choose us</h2>
+      <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 0.1rem; flex-wrap: wrap;">
+        <i class="fas fa-medal" style="font-size: 2rem; color: #2563eb;"></i>
+        <h2 style="font-size: 1.6rem; font-weight: 600;">Why choose us</h2>
       </div>
-      <p style="color: #475569; margin-bottom: 0.8rem; font-size: 1rem;">
-        <i class="fas fa-chevron-right" style="color: #2563eb; font-size: 0.8rem;"></i> 
+      <p style="color: #475569; margin-bottom: 0.6rem; font-size: 0.95rem;">
+        <i class="fas fa-chevron-right" style="color: #2563eb; font-size: 0.7rem;"></i> 
         We are your end-to-end bulk partner in the USA
       </p>
 
@@ -704,7 +859,7 @@
 
     <!-- CTA + enquiry section -->
     <div class="cta-section">
-      <h2><i class="fas fa-paper-plane" style="margin-right: 12px;"></i>Ready to bulk order & sell?</h2>
+      <h2><i class="fas fa-paper-plane" style="margin-right: 10px;"></i>Ready to bulk order & sell?</h2>
       <p>We handle purchase in USA and sell your products. Enquiry now – let's grow together.</p>
       <a href="#" class="cta-btn" onclick="alert('📩 Enquiry form: bulk@bulkpulse.com \nOr call +1 (555) 278-9900'); return false;">
         <i class="fas fa-envelope"></i> Enquiry now
@@ -716,7 +871,7 @@
     </div>
 
     <!-- small blog note: we are wholeseller -->
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 20px; background: #f8fcff; border-radius: 60px; padding: 0.8rem 1.2rem; margin: 0.5rem 0;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 16px; background: #f8fcff; border-radius: 50px; padding: 0.6rem 1rem; margin: 0.3rem 0; font-size: 0.85rem;">
       <span><i class="fas fa-check-circle" style="color: #2563eb;"></i> Wholesale partner</span>
       <span><i class="fas fa-check-circle" style="color: #2563eb;"></i> Bulk purchase USA</span>
       <span><i class="fas fa-check-circle" style="color: #2563eb;"></i> We sell for you</span>
@@ -727,12 +882,12 @@
     <footer class="footer">
       <p>
         <i class="fas fa-box-open"></i> BulkPulse · wholesale & bulk solutions 
-        <span style="margin:0 8px;">|</span> 
+        <span style="margin:0 6px;">|</span> 
         <i class="fas fa-flag-usa"></i> USA operations 
-        <span style="margin:0 8px;">|</span> 
+        <span style="margin:0 6px;">|</span> 
         <i class="fas fa-envelope"></i> bulk@bulkpulse.com
       </p>
-      <p style="margin-top: 0.4rem; font-size: 0.85rem; opacity: 0.7;">
+      <p style="margin-top: 0.3rem; font-size: 0.8rem; opacity: 0.7;">
         <i class="fas fa-rotate-left"></i> You purchase bulk from USA · we sell your products 
       </p>
     </footer>
@@ -742,7 +897,7 @@
 
   <script>
     // CTA alert already inline. Keep clean.
-    console.log('BulkPulse · wholesale & sell ready.');
+    console.log('BulkPulse · wholesale & sell ready (mobile responsive).');
   </script>
 </body>
 </html>
