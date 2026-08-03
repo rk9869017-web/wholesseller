@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BulkUSA · Wholesale Home Decor</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+        }
+
+        body {
+            background: #f4f7fc;
+            color: #1e2b3c;
+            padding: 1.5rem;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 1360px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 2.5rem;
+            padding: 2rem 2.5rem;
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.12);
+        }
+
+        /* header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid #eef2f6;
+        }
+        .logo h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            color: #0a2540;
+        }
+        .logo span {
+            color: #0066ff;
+            background: #e6f0ff;
+            padding: 0.1rem 0.8rem;
+            border-radius: 40px;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-left: 0.5rem;
+        }
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .cart-icon {
+            font-size: 1.6rem;
+            color: #0a2540;
+            background: #f0f5fe;
+            padding: 0.5rem 1rem;
+            border-radius: 60px;
+            border: 1px solid #d0e0ff;
+        }
+        .cart-icon i {
+            margin-right: 0.4rem;
+        }
+
+        /* hero */
+        .hero {
+            background: linear-gradient(145deg, #f0f7ff, #ffffff);
+            border-radius: 2.5rem;
+            padding: 2.5rem 2.8rem;
+            margin: 2rem 0 2rem 0;
+            border: 1px solid #c6ddff;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.5rem;
+        }
+        .hero h2 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: #0a2540;
+        }
+        .hero h2 i {
+            color: #0066ff;
+            margin-right: 0.5rem;
+        }
+        .hero p {
+            font-size: 1.15rem;
+            color: #1f3a57;
+            max-width: 600px;
+        }
+        .hero-badge {
+            background: #0a2540;
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 60px;
+            font-weight: 600;
+            font-size: 1.2rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            box-shadow: 0 6px 14px rgba(10, 37, 64, 0.2);
+        }
+        .hero-badge i {
+            color: #ffb347;
+        }
+
+        /* info row – wholesale features */
+        .info-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.8rem;
+            background: #f8faff;
+            border-radius: 2.5rem;
+            padding: 1.6rem 2.2rem;
+            margin: 1.8rem 0 2rem 0;
+            border: 1px solid #dce8f5;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .info-row .feature-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            font-size: 1.05rem;
+            font-weight: 500;
+        }
+        .info-row .feature-badge i {
+            font-size: 1.8rem;
+            color: #0066ff;
+            background: #e2edff;
+            padding: 0.5rem;
+            border-radius: 60px;
+        }
+        .info-row .highlight-tag {
+            background: #e3f5ec;
+            padding: 0.3rem 1.5rem;
+            border-radius: 60px;
+            font-weight: 600;
+            color: #0d6b3e;
+        }
+
+        /* product grid */
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 2rem 0 1.2rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+        .section-title i {
+            color: #0066ff;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .product-card {
+            background: #ffffff;
+            border-radius: 2rem;
+            padding: 1.5rem 1.2rem 1.8rem;
+            border: 1px solid #e9edf4;
+            transition: 0.2s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+            display: flex;
+            flex-direction: column;
+        }
+        .product-card:hover {
+            border-color: #b8ccff;
+            box-shadow: 0 12px 28px rgba(0, 80, 200, 0.08);
+            transform: translateY(-3px);
+        }
+        .product-img {
+            background: #f0f5fe;
+            border-radius: 1.8rem;
+            height: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3.8rem;
+            color: #0047b3;
+            margin-bottom: 1rem;
+        }
+        .product-name {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.2rem;
+        }
+        .product-desc {
+            color: #3b5b7a;
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+            flex: 1;
+        }
+        .product-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0.5rem 0 0.8rem 0;
+            flex-wrap: wrap;
+        }
+        .product-price {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: #0a2540;
+        }
+        .product-price small {
+            font-weight: 400;
+            font-size: 0.85rem;
+            color: #3b5b7a;
+            margin-left: 0.2rem;
+        }
+        .bulk-badge {
+            background: #e3f5ec;
+            color: #0d6b3e;
+            padding: 0.2rem 0.9rem;
+            border-radius: 60px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        .btn-bulk {
+            background: #0a2540;
+            color: white;
+            border: none;
+            padding: 0.7rem 1rem;
+            border-radius: 60px;
+            font-weight: 600;
+            width: 100%;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            cursor: default;
+            transition: 0.15s;
+            margin-top: 0.5rem;
+        }
+        .btn-bulk i {
+            font-size: 1rem;
+        }
+        .btn-bulk:hover {
+            background: #1d3b5c;
+        }
+
+        /* wholesale note */
+        .wholesale-note {
+            background: #0a1e33;
+            border-radius: 3rem;
+            padding: 1.2rem 2.2rem;
+            color: white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            background-image: radial-gradient(circle at 10% 30%, #1b3752, #07121f);
+            margin-top: 1.8rem;
+        }
+        .wholesale-note strong {
+            font-size: 1.2rem;
+        }
+        .wholesale-note i {
+            color: #ffb347;
+            margin-right: 0.4rem;
+        }
+        .wholesale-note .badge {
+            background: #ffb347;
+            color: #1d2c3f;
+            padding: 0.3rem 1.5rem;
+            border-radius: 60px;
+            font-weight: 700;
+        }
+
+        /* trust footer */
+        .trust-footer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            background: #eef4fa;
+            border-radius: 3rem;
+            padding: 1rem 2rem;
+            margin-top: 2rem;
+            border: 1px solid #d4e0ee;
+        }
+        .trust-footer span {
+            font-weight: 500;
+        }
+        .trust-footer i {
+            color: #0066ff;
+            margin-right: 0.3rem;
+        }
+
+        /* responsive */
+        @media (max-width: 700px) {
+            .container { padding: 1.5rem; }
+            .header { flex-direction: column; align-items: start; }
+            .hero { flex-direction: column; align-items: flex-start; }
+            .info-row { flex-direction: column; align-items: flex-start; }
+            .wholesale-note { flex-direction: column; align-items: flex-start; gap: 0.8rem; }
+            .trust-footer { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <!-- header -->
+    <header class="header">
+        <div class="logo">
+            <h1>Bulk<span>USA</span></h1>
+            <div style="font-size: 0.9rem; color: #3b5b7a;"><i class="fas fa-flag-usa"></i> Wholesale Home Decor · USA bulk</div>
+        </div>
+        <div class="header-actions">
+            <span class="cart-icon"><i class="fas fa-shopping-cart"></i> Bulk cart</span>
+            <span style="background: #f0f5ff; padding: 0.4rem 1.2rem; border-radius: 60px; font-weight: 500;"><i class="fas fa-truck"></i> 15‑day shipping</span>
+        </div>
+    </header>
+
+    <!-- hero -->
+    <div class="hero">
+        <div>
+            <h2><i class="fas fa-crown"></i> Wholesale Home Decor</h2>
+            <p>Premium home decor products – bulk purchase from USA stock. Perfect for retailers &amp; interior designers.</p>
+        </div>
+        <div class="hero-badge">
+            <i class="fas fa-warehouse"></i> B2B Wholesaler
+        </div>
+    </div>
+
+    <!-- info row: wholesale features -->
+    <div class="info-row">
+        <div class="feature-badge"><i class="fas fa-cubes"></i> Bulk purchase – USA stock</div>
+        <div class="feature-badge"><i class="fas fa-warehouse"></i> Wholesale model – B2B</div>
+        <div class="feature-badge"><i class="fas fa-handshake"></i> Add & sell – we handle everything</div>
+        <div class="highlight-tag"><i class="fas fa-thumbs-up"></i> Bulk orders · US stock · Wholesale ready</div>
+    </div>
+
+    <!-- product section -->
+    <div class="section-title">
+        <i class="fas fa-boxes"></i> Home Decor – Bulk Collection
+    </div>
+
+    <div class="product-grid">
+        <!-- product 1: Vase -->
+        <div class="product-card">
+            <div class="product-img"><i class="fas fa-flask"></i></div>
+            <div class="product-name">Ceramic Vase</div>
+            <div class="product-desc">Handcrafted, matte finish, 12" height</div>
+            <div class="product-meta">
+                <span class="product-price">$34<small>/unit</small></span>
+                <span class="bulk-badge"><i class="fas fa-box"></i> bulk 20+</span>
+            </div>
+            <button class="btn-bulk"><i class="fas fa-plus-circle"></i> Add bulk order</button>
+        </div>
+
+        <!-- product 2: Wall Art -->
+        <div class="product-card">
+            <div class="product-img"><i class="fas fa-paint-brush"></i></div>
+            <div class="product-name">Abstract Wall Art</div>
+            <div class="product-desc">Canvas, 24x36", modern design</div>
+            <div class="product-meta">
+                <span class="product-price">$89<small>/unit</small></span>
+                <span class="bulk-badge"><i class="fas fa-box"></i> bulk 10+</span>
+            </div>
+            <button class="btn-bulk"><i class="fas fa-plus-circle"></i> Add bulk order</button>
+        </div>
+
+        <!-- product 3: Lamp -->
+        <div class="product-card">
+            <div class="product-img"><i class="fas fa-lightbulb"></i></div>
+            <div class="product-name">Table Lamp</div>
+            <div class="product-desc">Brass base, linen shade, dimmable</div>
+            <div class="product-meta">
+                <span class="product-price">$62<small>/unit</small></span>
+                <span class="bulk-badge"><i class="fas fa-box"></i> bulk 15+</span>
+            </div>
+            <button class="btn-bulk"><i class="fas fa-plus-circle"></i> Add bulk order</button>
+        </div>
+
+        <!-- product 4: Rug -->
+        <div class="product-card">
+            <div class="product-img"><i class="fas fa-carpet"></i></div>
+            <div class="product-name">Wool Rug</div>
+            <div class="product-desc">5x7 ft, geometric pattern, premium</div>
+            <div class="product-meta">
+                <span class="product-price">$145<small>/unit</small></span>
+                <span class="bulk-badge"><i class="fas fa-box"></i> bulk 8+</span>
+            </div>
+            <button class="btn-bulk"><i class="fas fa-plus-circle"></i> Add bulk order</button>
+        </div>
+
+        <!-- product 5: Cushion Set -->
+        <div class="product-card">
+            <div class="product-img"><i class="fas fa-couch"></i></div>
+            <div class="product-name">Decorative Cushions</div>
+            <div class="product-desc">Set of 4, velvet, assorted colors</div>
+            <div class="product-meta">
+                <span class="product-price">$78<small>/unit</small></span>
+                <span class="bulk-badge"><i class="fas fa-box"></i> bulk 12+</span>
+            </div>
+            <button class="btn-bulk"><i class="fas fa-plus-circle"></i> Add bulk order</button>
+        </div>
+
+        <!-- product 6: Mirror -->
+        <div class="product-card">
+            <div class="product-img"><i class="fas fa-image"></i></div>
+            <div class="product-name">Wall Mirror</div>
+            <div class="product-desc">Gold frame, 30" round, beveled</div>
+            <div class="product-meta">
+                <span class="product-price">$110<small>/unit</small></span>
+                <span class="bulk-badge"><i class="fas fa-box"></i> bulk 10+</span>
+            </div>
+            <button class="btn-bulk"><i class="fas fa-plus-circle"></i> Add bulk order</button>
+        </div>
+    </div>
+
+    <!-- wholesale note -->
+    <div class="wholesale-note">
+        <div>
+            <i class="fas fa-crown"></i> <strong>WholesaleBulk.com</strong> — USA B2B · bulk purchase · add & sell
+        </div>
+        <div class="badge"><i class="fas fa-warehouse"></i> WHOLESALER</div>
+    </div>
+
+    <!-- trust & shipping -->
+    <div class="trust-footer">
+        <span><i class="fas fa-check-circle" style="color:#1f8b4c;"></i> <strong>15‑day shipping</strong> — mitigated with US stock</span>
+        <span><i class="fas fa-store-alt"></i> Gateway & trust handled via wholesale website</span>
+        <span><i class="fas fa-flag-usa"></i> 100% USA bulk operations</span>
+    </div>
+
+    <!-- footer -->
+    <div style="margin-top: 2.2rem; text-align: center; border-top: 1px solid #dce6f0; padding-top: 1.2rem; color: #2b4a6a; font-size: 0.95rem;">
+        <i class="fas fa-code"></i> Full HTML + CSS — wholesale home decor • bulk purchase ready
+    </div>
+
+</div> <!-- container -->
+</body>
+</html>
