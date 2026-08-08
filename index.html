@@ -212,6 +212,19 @@
       margin: 0 auto 0.8rem;
     }
 
+    /* image style for regent product */
+    .product-card .product-img {
+      width: 70px;
+      height: 70px;
+      object-fit: cover;
+      border-radius: 50px;
+      margin: 0 auto 0.8rem;
+      display: block;
+      background: #eef4ff;
+      border: 2px solid #dbe7fe;
+      padding: 4px;
+    }
+
     .product-card h3 {
       font-size: 1.2rem;
       font-weight: 600;
@@ -538,7 +551,7 @@
       .product-card {
         padding: 1.2rem 0.8rem 1rem;
       }
-      .product-icon {
+      .product-icon, .product-card .product-img {
         width: 60px;
         height: 60px;
         line-height: 60px;
@@ -706,22 +719,22 @@
       </div>
     </section>
 
-    <!-- product showcase: 4-5 products -->
+    <!-- product showcase: 5 products, first is Regent wooden table telephone with image -->
     <div class="section-title">
       <i class="fas fa-cube"></i> Featured bulk products
       <span class="wholesale-tag"><i class="fas fa-tag"></i> wholesale ready</span>
     </div>
 
     <div class="product-grid">
-      <!-- product 1 -->
+      <!-- product 1: Regent wooden table telephone (image) - price tag removed, bulk badge removed -->
       <div class="product-card">
-        <div class="product-icon"><i class="fas fa-laptop"></i></div>
-        <h3>TechBundle</h3>
-        <div class="price-tag">$149 / unit</div>
-        <p>USB hubs · cables · chargers</p>
-        <span class="badge-bulk"><i class="fas fa-box"></i> bulk 50+</span>
+        <img class="product-img" src="https://wholesseller.rk9869017.workers.dev/regent.jpg" alt="Regent wooden table telephone" />
+        <h3>Regent wooden table telephone</h3>
+        <!-- price-tag removed -->
+        <p>Regent wooden table telephone</p>
+        <!-- badge-bulk removed -->
       </div>
-      <!-- product 2 -->
+      <!-- product 2: Fleece hoodies (icon) -->
       <div class="product-card">
         <div class="product-icon"><i class="fas fa-tshirt"></i></div>
         <h3>Fleece hoodies</h3>
@@ -729,7 +742,7 @@
         <p>6 colors · unisex S-XXL</p>
         <span class="badge-bulk"><i class="fas fa-box"></i> bulk 100+</span>
       </div>
-      <!-- product 3 -->
+      <!-- product 3: HomeGadget (icon) -->
       <div class="product-card">
         <div class="product-icon"><i class="fas fa-blender-phone"></i></div>
         <h3>HomeGadget</h3>
@@ -737,7 +750,7 @@
         <p>smart plugs · bulbs · hubs</p>
         <span class="badge-bulk"><i class="fas fa-box"></i> bulk 40+</span>
       </div>
-      <!-- product 4 -->
+      <!-- product 4: FitGear pro (icon) -->
       <div class="product-card">
         <div class="product-icon"><i class="fas fa-dumbbell"></i></div>
         <h3>FitGear pro</h3>
@@ -745,7 +758,7 @@
         <p>resistance bands · mats</p>
         <span class="badge-bulk"><i class="fas fa-box"></i> bulk 60+</span>
       </div>
-      <!-- product 5 -->
+      <!-- product 5: Mug & flask (icon) -->
       <div class="product-card">
         <div class="product-icon"><i class="fas fa-coffee"></i></div>
         <h3>Mug & flask</h3>
