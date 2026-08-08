@@ -146,7 +146,7 @@
       color: #1e3a8a;
     }
 
-    /* ROADMAP / HOW IT WORKS - RESPONSIVE */
+    /* ROADMAP / HOW IT WORKS - FULLY RESPONSIVE */
     .roadmap-box {
       background: #ffffff;
       border-radius: 28px;
@@ -228,7 +228,7 @@
       color: #2563eb;
     }
 
-    /* product showcase grid */
+    /* product showcase grid - FULLY RESPONSIVE */
     .section-title {
       font-size: 1.6rem;
       font-weight: 600;
@@ -490,7 +490,7 @@
       text-overflow: ellipsis;
     }
 
-    /* WHY CHOOSE US / BENEFITS */
+    /* WHY CHOOSE US / BENEFITS - FULLY RESPONSIVE */
     .benefits-section {
       background: #ffffff;
       border-radius: 32px;
@@ -664,15 +664,18 @@
       display: none;
     }
 
-    /* ----- MOBILE RESPONSIVE TWEAKS ----- */
+    /* ----- FULL RESPONSIVE TWEAKS ----- */
     @media (max-width: 1024px) {
       .roadmap-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
       }
+      .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      }
     }
 
-    @media (max-width: 700px) {
+    @media (max-width: 768px) {
       .container {
         padding: 0 1rem;
       }
@@ -683,6 +686,8 @@
       .hero p {
         font-size: 0.95rem;
         padding: 0.5rem 1rem;
+        width: 100%;
+        text-align: center;
       }
 
       .navbar {
@@ -731,7 +736,7 @@
       }
 
       .product-grid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
         gap: 1rem;
       }
       .product-card {
@@ -794,6 +799,7 @@
       .blog-meta {
         font-size: 0.75rem;
         gap: 6px;
+        justify-content: center;
       }
       .wholesale-tag {
         font-size: 0.75rem;
@@ -805,6 +811,7 @@
         font-size: 0.85rem !important;
         display: block !important;
         text-align: center;
+        width: 100%;
       }
 
       .modal-content {
@@ -848,6 +855,10 @@
       .hero h1 {
         font-size: 1.5rem;
       }
+      .hero p {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+      }
       .container {
         padding: 0 0.8rem;
       }
@@ -876,6 +887,56 @@
         font-size: 1.2rem;
         bottom: 16px;
         right: 16px;
+      }
+
+      .benefit-item {
+        align-items: center;
+        text-align: center;
+      }
+      .benefit-item i {
+        margin: 0 auto 0.6rem;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .product-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.6rem;
+      }
+      .product-card {
+        padding: 0.8rem 0.5rem;
+      }
+      .product-card h3 {
+        font-size: 0.85rem;
+      }
+      .product-card p {
+        font-size: 0.75rem;
+      }
+      .product-card .product-img {
+        max-width: 100px;
+      }
+      .roadmap-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.4rem;
+      }
+      .roadmap-step {
+        padding: 0.3rem;
+      }
+      .roadmap-step h4 {
+        font-size: 0.75rem;
+      }
+      .roadmap-step p {
+        font-size: 0.7rem;
+      }
+      .benefits-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+      }
+      .benefit-item h4 {
+        font-size: 0.8rem;
+      }
+      .benefit-item p {
+        font-size: 0.7rem;
       }
     }
   </style>
