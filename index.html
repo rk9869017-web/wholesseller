@@ -146,7 +146,7 @@
       color: #1e3a8a;
     }
 
-    /* ROADMAP / HOW IT WORKS */
+    /* ROADMAP / HOW IT WORKS - RESPONSIVE */
     .roadmap-box {
       background: #ffffff;
       border-radius: 28px;
@@ -171,7 +171,7 @@
 
     .roadmap-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      grid-template-columns: repeat(4, 1fr);
       gap: 1.2rem;
     }
 
@@ -179,6 +179,14 @@
       display: flex;
       flex-direction: column;
       gap: 0.1rem;
+      padding: 0.8rem;
+      border-radius: 16px;
+      background: #f8faff;
+      transition: 0.2s;
+    }
+
+    .roadmap-step:hover {
+      background: #eef4ff;
     }
 
     .roadmap-step .step-num {
@@ -203,6 +211,21 @@
     .roadmap-step p {
       color: #475569;
       font-size: 0.9rem;
+    }
+
+    .roadmap-box .roadmap-footer {
+      margin-top: 0.8rem;
+      color: #1e3a8a;
+      font-weight: 500;
+      background: #eef4ff;
+      padding: 0.25rem 1rem;
+      border-radius: 40px;
+      display: inline-block;
+      font-size: 0.9rem;
+    }
+
+    .roadmap-box .roadmap-footer i {
+      color: #2563eb;
     }
 
     /* product showcase grid */
@@ -687,6 +710,13 @@
     }
 
     /* ----- MOBILE RESPONSIVE TWEAKS ----- */
+    @media (max-width: 1024px) {
+      .roadmap-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+      }
+    }
+
     @media (max-width: 700px) {
       .container {
         padding: 0 1rem;
@@ -721,6 +751,9 @@
       .roadmap-grid {
         grid-template-columns: 1fr 1fr;
         gap: 0.8rem;
+      }
+      .roadmap-step {
+        padding: 0.6rem;
       }
       .roadmap-step .step-num {
         width: 28px;
@@ -861,6 +894,9 @@
         grid-template-columns: 1fr 1fr;
         gap: 0.6rem;
       }
+      .roadmap-step {
+        padding: 0.5rem;
+      }
       .benefits-grid {
         grid-template-columns: 1fr 1fr;
         gap: 0.8rem;
@@ -934,7 +970,7 @@
         <span class="tag-usa"><i class="fas fa-store"></i> B2B · USA</span>
       </div>
 
-      <!-- ROADMAP / HOW IT WORKS -->
+      <!-- ROADMAP / HOW IT WORKS - RESPONSIVE -->
       <div class="roadmap-box">
         <h3><i class="fas fa-route"></i> How it works – your bulk roadmap</h3>
         <div class="roadmap-grid">
@@ -959,8 +995,8 @@
             <p>Profit from wholesale margins – we handle everything.</p>
           </div>
         </div>
-        <p style="margin-top: 0.8rem; color: #1e3a8a; font-weight: 500; background: #eef4ff; padding: 0.25rem 1rem; border-radius: 40px; display: inline-block; font-size: 0.9rem;">
-          <i class="fas fa-handshake" style="color:#2563eb;"></i> We are the wholeseller – you buy, we sell.
+        <p class="roadmap-footer">
+          <i class="fas fa-handshake"></i> We are the wholeseller – you buy, we sell.
         </p>
       </div>
     </section>
