@@ -212,13 +212,13 @@
       margin: 0 auto 0.8rem;
     }
 
-    /* image style for product - FULL SIZE, BETTER REPRESENTATION */
+    /* image style for product - FULL SIZE, BETTER REPRESENTATION - NO CROP */
     .product-card .product-img {
       width: 100%;
       max-width: 220px;
       height: auto;
-      aspect-ratio: 1/1;
-      object-fit: cover;
+      aspect-ratio: auto;
+      object-fit: contain;
       border-radius: 20px;
       margin: 0 auto 0.8rem;
       display: block;
@@ -771,9 +771,9 @@
         <p>Brass Hand bells</p>
       </div>
 
-      <!-- product 5: Brass stand binocular - FULL IMAGE (price tag removed, bulk badge removed) -->
+      <!-- product 5: Brass stand binocular - FULL IMAGE - NO CROP (price tag removed, bulk badge removed) -->
       <div class="product-card">
-        <img class="product-img" src="https://wholesseller.rk9869017.workers.dev/Brass%20stand%20binocular.jpg" alt="Brass stand binocular" />
+        <img class="product-img" src="https://wholesseller.rk9869017.workers.dev/Brass%20stand%20binocular.jpg" alt="Brass stand binocular" style="width:100%; max-width:220px; height:auto; aspect-ratio:auto; object-fit:contain; border-radius:20px; margin:0 auto 0.8rem; display:block; background:#eef4ff; border:3px solid #dbe7fe; padding:6px; transition:transform 0.3s ease, box-shadow 0.3s ease;" />
         <h3>Brass stand binocular</h3>
         <p>Brass stand binocular</p>
       </div>
