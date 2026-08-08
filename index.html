@@ -103,6 +103,49 @@
       margin-right: 8px;
     }
 
+    /* Hero Banner */
+    .hero-banner {
+      margin: 1rem 0 1.2rem 0;
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+    }
+
+    .hero-banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 28px;
+      transition: transform 0.3s ease;
+    }
+
+    .hero-banner img:hover {
+      transform: scale(1.01);
+    }
+
+    /* blog meta under banner */
+    .blog-meta {
+      display: flex;
+      gap: 10px;
+      color: #64748b;
+      font-size: 0.8rem;
+      margin-top: 0.4rem;
+      flex-wrap: wrap;
+    }
+
+    .blog-meta i {
+      margin-right: 4px;
+    }
+
+    .tag-usa {
+      background: #dbeafe;
+      padding: 0.15rem 0.8rem;
+      border-radius: 30px;
+      font-weight: 500;
+      font-size: 0.75rem;
+      color: #1e3a8a;
+    }
+
     /* ROADMAP / HOW IT WORKS */
     .roadmap-box {
       background: #ffffff;
@@ -213,7 +256,6 @@
       margin: 0 auto 0.8rem;
     }
 
-    /* image style for product - FULL SIZE, BETTER REPRESENTATION - NO CROP */
     .product-card .product-img {
       width: 100%;
       max-width: 220px;
@@ -547,29 +589,6 @@
       margin: 0 4px;
     }
 
-    /* blog meta */
-    .blog-meta {
-      display: flex;
-      gap: 10px;
-      color: #64748b;
-      font-size: 0.8rem;
-      margin-top: 0.4rem;
-      flex-wrap: wrap;
-    }
-
-    .blog-meta i {
-      margin-right: 4px;
-    }
-
-    .tag-usa {
-      background: #dbeafe;
-      padding: 0.15rem 0.8rem;
-      border-radius: 30px;
-      font-weight: 500;
-      font-size: 0.75rem;
-      color: #1e3a8a;
-    }
-
     .wholesale-tag {
       background: #f1f5f9;
       padding: 0.2rem 1rem;
@@ -653,6 +672,14 @@
     .detail-highlight i {
       color: #2563eb;
       margin-right: 10px;
+    }
+
+    /* small note inline */
+    .small-note-inline {
+      padding: 0.5rem 1rem !important;
+      font-size: 0.85rem !important;
+      display: block !important;
+      text-align: center;
     }
 
     /* ----- MOBILE RESPONSIVE TWEAKS ----- */
@@ -802,7 +829,6 @@
         padding: 0.15rem 0.8rem;
       }
 
-      /* small note inline */
       .small-note-inline {
         padding: 0.5rem 1rem !important;
         font-size: 0.85rem !important;
@@ -863,7 +889,7 @@
       </div>
     </header>
 
-    <!-- ====== HERO with FULL ROADMAP ====== -->
+    <!-- ====== HERO with BANNER ====== -->
     <section class="hero">
       <h1>
         <span>Bulk order</span> · We sell <br> for you in the USA
@@ -871,13 +897,20 @@
       <p>
         <i class="fas fa-arrow-right"></i> We are your wholesale partner – you buy in bulk, we sell your products in the USA
       </p>
+
+      <!-- BANNER IMAGE -->
+      <div class="hero-banner">
+        <img src="https://wholesseller.rk9869017.workers.dev/image1.jpeg" alt="fc-exports wholesale banner" />
+      </div>
+
+      <!-- BLOG META UNDER BANNER -->
       <div class="blog-meta">
         <span><i class="far fa-calendar-alt"></i> Aug 2026</span>
         <span><i class="far fa-user"></i> Wholesale team</span>
         <span class="tag-usa"><i class="fas fa-store"></i> B2B · USA</span>
       </div>
 
-      <!-- ROADMAP / HOW IT WORKS (inside hero) -->
+      <!-- ROADMAP / HOW IT WORKS -->
       <div class="roadmap-box">
         <h3><i class="fas fa-route"></i> How it works – your bulk roadmap</h3>
         <div class="roadmap-grid">
