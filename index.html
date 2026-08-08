@@ -709,6 +709,42 @@
       text-align: center;
     }
 
+    /* Live Chat Button */
+    .live-chat-btn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #2563eb;
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 30px rgba(37, 99, 235, 0.35);
+      cursor: pointer;
+      z-index: 9998;
+      transition: all 0.3s ease;
+      border: none;
+      font-size: 1.8rem;
+      text-decoration: none;
+    }
+
+    .live-chat-btn:hover {
+      transform: scale(1.08);
+      box-shadow: 0 12px 40px rgba(37, 99, 235, 0.5);
+      background: #1d4ed8;
+    }
+
+    .live-chat-btn i {
+      color: white;
+    }
+
+    .live-chat-btn .chat-label {
+      display: none;
+    }
+
     /* ----- MOBILE RESPONSIVE TWEAKS ----- */
     @media (max-width: 1024px) {
       .roadmap-grid {
@@ -887,6 +923,14 @@
       .modal-slider-item img {
         height: 60px;
       }
+
+      .live-chat-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 1.4rem;
+        bottom: 20px;
+        right: 20px;
+      }
     }
 
     @media (max-width: 480px) {
@@ -932,6 +976,13 @@
       .detail-highlight {
         font-size: 0.82rem;
         padding: 0.6rem 1rem;
+      }
+      .live-chat-btn {
+        width: 44px;
+        height: 44px;
+        font-size: 1.2rem;
+        bottom: 16px;
+        right: 16px;
       }
     }
   </style>
@@ -1270,6 +1321,28 @@
     </div>
   </div>
 
+  <!-- ====== LIVE CHAT BUTTON (Floating) ====== -->
+  <a href="#" class="live-chat-btn" id="liveChatBtn" title="Talk to us">
+    <i class="fas fa-comment-dots"></i>
+  </a>
+
+  <!-- ====== Tawk.to Live Chat Script ====== -->
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {},
+      Tawk_LoadStart = new Date();
+    (function() {
+      var s1 = document.createElement("script"),
+        s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/6a7766d2542f651d4650fe49/1jvh6ja91';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+
   <script>
     // Product data for slider
     const products = [
@@ -1347,6 +1420,17 @@
 
     document.addEventListener('keydown', function(e) {
       if (e.key === 'Escape') closeModal();
+    });
+
+    // Live Chat Button - opens Tawk.to widget
+    document.getElementById('liveChatBtn').addEventListener('click', function(e) {
+      e.preventDefault();
+      if (typeof Tawk_API !== 'undefined' && Tawk_API.toggle) {
+        Tawk_API.toggle();
+      } else {
+        // Fallback: open in new window if Tawk not loaded
+        window.open('https://tawk.to/chat/6a7766d2542f651d4650fe49/1jvh6ja91', '_blank');
+      }
     });
 
     console.log('fc-exports · wholesale & sell ready (mobile responsive).');
