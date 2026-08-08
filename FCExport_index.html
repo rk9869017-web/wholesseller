@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FCExport | Wholesale Antique & Décor · Export · Digital Growth</title>
+  <meta name="description" content="FCExport is a manufacturer and exporter of handcrafted antique, vintage and decorative products. Buy in bulk with export, OEM and digital marketing support.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+      background: #f7f8fb;
+      color: #182230;
+      line-height: 1.8;
+      font-size: 18px;
+    }
+    img {
+      max-width: 100%;
+      display: block;
+    }
+    a {
+      text-decoration: none;
+    }
+    .container {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 0 30px;
+    }
+    /* navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 28px 0 20px;
+      border-bottom: 2px solid #e8ebf0;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 34px;
+      font-weight: 800;
+      color: #102c52;
+    }
+    .logo i {
+      color: #2563eb;
+      font-size: 34px;
+    }
+    .logo small {
+      display: block;
+      font-size: 13px;
+      letter-spacing: 2.5px;
+      color: #64748b;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+    .nav-tag {
+      background: #eef4ff;
+      color: #1d4ed8;
+      padding: 12px 24px;
+      border-radius: 50px;
+      font-size: 17px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .nav-tag i {
+      margin-right: 8px;
+    }
+    /* hero */
+    .hero {
+      padding: 60px 0 30px;
+    }
+    .hero-content {
+      max-width: 1000px;
+    }
+    .hero-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #eaf2ff;
+      color: #1d4ed8;
+      padding: 10px 22px;
+      border-radius: 50px;
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      letter-spacing: 0.5px;
+    }
+    .hero h1 {
+      font-size: 64px;
+      line-height: 1.15;
+      letter-spacing: -1.5px;
+      color: #172033;
+      margin-bottom: 20px;
+    }
+    .hero h1 span {
+      color: #2563eb;
+    }
+    .hero-subtitle {
+      font-size: 24px;
+      color: #334155;
+      max-width: 900px;
+      margin-bottom: 30px;
+      font-weight: 400;
+      line-height: 1.6;
+    }
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-bottom: 32px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 18px 34px;
+      border-radius: 14px;
+      font-size: 19px;
+      font-weight: 700;
+      transition: 0.25s ease;
+      border: none;
+      cursor: pointer;
+    }
+    .btn-primary {
+      background: #2563eb;
+      color: #fff;
+      box-shadow: 0 8px 28px rgba(37, 99, 235, 0.25);
+    }
+    .btn-primary:hover {
+      background: #1d4ed8;
+      transform: translateY(-3px);
+      box-shadow: 0 16px 35px rgba(37, 99, 235, 0.30);
+    }
+    .btn-secondary {
+      background: #fff;
+      color: #1e3a8a;
+      border: 2px solid #d9e2f1;
+    }
+    .btn-secondary:hover {
+      border-color: #2563eb;
+      transform: translateY(-3px);
+      background: #fafcff;
+    }
+    .btn-whatsapp {
+      background: #25D366;
+      color: #fff;
+      border: 2px solid #25D366;
+    }
+    .btn-whatsapp:hover {
+      background: #1da851;
+      border-color: #1da851;
+      transform: translateY(-3px);
+    }
+    .hero-banner {
+      margin-top: 24px;
+      border-radius: 32px;
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgba(15, 23, 42, 0.12);
+    }
+    .hero-banner img {
+      width: 100%;
+      height: auto;
+    }
+    /* trust */
+    .trust-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      margin: 28px 0 50px;
+      background: #fff;
+      border: 2px solid #e5eaf2;
+      border-radius: 28px;
+      overflow: hidden;
+    }
+    .trust-item {
+      padding: 28px 15px;
+      text-align: center;
+      border-right: 2px solid #e8edf4;
+    }
+    .trust-item:last-child {
+      border-right: none;
+    }
+    .trust-item i {
+      color: #2563eb;
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+    .trust-item strong {
+      display: block;
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .trust-item span {
+      font-size: 16px;
+      color: #64748b;
+    }
+    /* section */
+    .section {
+      margin: 85px 0;
+    }
+    .section-heading {
+      max-width: 850px;
+      margin-bottom: 38px;
+    }
+    .section-heading .eyebrow {
+      color: #2563eb;
+      font-size: 17px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    .section-heading h2 {
+      font-size: 44px;
+      line-height: 1.2;
+      margin: 10px 0 14px;
+      color: #172033;
+    }
+    .section-heading p {
+      color: #475569;
+      font-size: 20px;
+      line-height: 1.7;
+    }
+    /* roadmap */
+    .roadmap-box {
+      background: #fff;
+      border: 2px solid #e4eaf3;
+      border-radius: 32px;
+      padding: 44px 40px;
+      box-shadow: 0 12px 40px rgba(15, 23, 42, 0.05);
+    }
+    .roadmap-title {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 30px;
+      font-weight: 700;
+      margin-bottom: 32px;
+    }
+    .roadmap-title i {
+      color: #2563eb;
+      font-size: 32px;
+    }
+    .roadmap-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+    .roadmap-step {
+      background: #f8faff;
+      border: 2px solid #e6ecf5;
+      border-radius: 24px;
+      padding: 28px 24px;
+      min-height: 240px;
+      transition: 0.25s;
+    }
+    .roadmap-step:hover {
+      border-color: #b9cdf4;
+      background: #f5f9ff;
+    }
+    .step-number {
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #eaf2ff;
+      color: #2563eb;
+      border-radius: 50%;
+      font-weight: 800;
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+    .roadmap-step h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+    .roadmap-step p {
+      color: #475569;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+    .roadmap-footer {
+      margin-top: 32px;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: #eef4ff;
+      color: #1e3a8a;
+      padding: 14px 28px;
+      border-radius: 60px;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    /* products */
+    .products-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+      margin-bottom: 32px;
+    }
+    .products-title {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 36px;
+      font-weight: 700;
+    }
+    .products-title i {
+      color: #2563eb;
+    }
+    .wholesale-tag {
+      background: #eaf2ff;
+      color: #1d4ed8;
+      padding: 10px 20px;
+      border-radius: 50px;
+      font-size: 17px;
+      font-weight: 700;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 24px;
+    }
+    .product-card {
+      background: #fff;
+      border: 2px solid #e5eaf2;
+      border-radius: 24px;
+      padding: 18px 16px 20px;
+      text-align: center;
+      cursor: pointer;
+      transition: 0.25s ease;
+      box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
+    }
+    .product-card:hover {
+      transform: translateY(-8px);
+      border-color: #b9cdf4;
+      box-shadow: 0 20px 45px rgba(37, 99, 235, 0.10);
+    }
+    .product-img {
+      width: 100%;
+      aspect-ratio: 1/1;
+      object-fit: contain;
+      background: #f5f8fd;
+      border-radius: 18px;
+      padding: 10px;
+      margin-bottom: 14px;
+    }
+    .product-card h3 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .product-card p {
+      color: #64748b;
+      font-size: 15px;
+    }
+    /* content card - CENTER ALIGNED with bigger text */
+    .content-card {
+      background: #fff;
+      border: 2px solid #e4eaf3;
+      border-radius: 32px;
+      padding: 50px 55px;
+      box-shadow: 0 12px 40px rgba(15, 23, 42, 0.04);
+      text-align: center;
+    }
+    .content-card h2 {
+      font-size: 40px;
+      line-height: 1.25;
+      color: #172033;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .content-card h3 {
+      font-size: 28px;
+      color: #17365f;
+      margin-top: 38px;
+      margin-bottom: 14px;
+      text-align: center;
+    }
+    .content-card p {
+      color: #334155;
+      font-size: 20px;
+      line-height: 1.8;
+      max-width: 1000px;
+      margin: 0 auto 18px auto;
+      text-align: center;
+    }
+    .content-card ul {
+      margin: 16px auto 24px auto;
+      padding-left: 0;
+      text-align: center;
+      list-style: none;
+      max-width: 850px;
+    }
+    .content-card li {
+      color: #334155;
+      font-size: 19px;
+      line-height: 1.7;
+      margin-bottom: 12px;
+      padding-left: 0;
+      text-align: center;
+    }
+    .content-card li::before {
+      content: "▸ ";
+      color: #2563eb;
+      font-weight: 700;
+      font-size: 22px;
+    }
+    /* support */
+    .support-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+    .support-card {
+      background: #fff;
+      border: 2px solid #e5eaf2;
+      border-radius: 24px;
+      padding: 32px 24px;
+      transition: 0.25s;
+    }
+    .support-card:hover {
+      transform: translateY(-5px);
+      border-color: #c5d7f7;
+      box-shadow: 0 14px 35px rgba(37, 99, 235, 0.06);
+    }
+    .support-icon {
+      width: 62px;
+      height: 62px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #eaf2ff;
+      color: #2563eb;
+      border-radius: 18px;
+      font-size: 28px;
+      margin-bottom: 16px;
+    }
+    .support-card h3 {
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+    .support-card p {
+      color: #475569;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+    /* audience */
+    .audience-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+    .audience-card {
+      background: #fff;
+      border: 2px solid #e5eaf2;
+      border-radius: 24px;
+      padding: 32px 30px;
+      transition: 0.25s;
+    }
+    .audience-card:hover {
+      border-color: #b9cdf4;
+      background: #fafcff;
+    }
+    .audience-card h3 {
+      font-size: 22px;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .audience-card p {
+      color: #475569;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+    /* cta */
+    .cta {
+      margin: 80px 0 45px;
+      background: linear-gradient(135deg, #102d55, #1e4f91);
+      color: #fff;
+      border-radius: 36px;
+      padding: 64px 48px;
+      text-align: center;
+      box-shadow: 0 24px 60px rgba(16, 45, 85, 0.22);
+    }
+    .cta h2 {
+      font-size: 44px;
+      margin-bottom: 14px;
+    }
+    .cta p {
+      max-width: 750px;
+      margin: 0 auto 32px;
+      color: #dbeafe;
+      font-size: 20px;
+      line-height: 1.7;
+    }
+    .cta .btn-primary {
+      background: #fff;
+      color: #17365f;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+      font-size: 20px;
+      padding: 20px 40px;
+    }
+    .cta .btn-primary:hover {
+      background: #f1f5f9;
+      transform: translateY(-3px);
+    }
+    /* footer */
+    .footer {
+      border-top: 2px solid #e5eaf2;
+      padding: 38px 0;
+      text-align: center;
+      color: #64748b;
+      font-size: 16px;
+    }
+    .footer i {
+      color: #2563eb;
+      margin-right: 6px;
+    }
+    .footer p {
+      font-size: 16px;
+    }
+    /* modal */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(2, 8, 23, 0.82);
+      z-index: 9999;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .modal-overlay.active {
+      display: flex;
+    }
+    .modal-content {
+      background: #fff;
+      width: 100%;
+      max-width: 780px;
+      max-height: 90vh;
+      overflow-y: auto;
+      border-radius: 34px;
+      padding: 34px 38px;
+      position: relative;
+    }
+    .modal-close {
+      position: absolute;
+      right: 22px;
+      top: 22px;
+      width: 48px;
+      height: 48px;
+      border: none;
+      background: #fff;
+      border-radius: 50%;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.10);
+      cursor: pointer;
+      font-size: 22px;
+      color: #475569;
+      transition: 0.2s;
+    }
+    .modal-close:hover {
+      background: #f1f5f9;
+    }
+    .modal-product-image {
+      width: 100%;
+      max-height: 380px;
+      object-fit: contain;
+      background: #f5f8fd;
+      border-radius: 24px;
+      margin-bottom: 20px;
+    }
+    .modal-product-title {
+      font-size: 32px;
+      color: #17365f;
+      margin-bottom: 8px;
+    }
+    .modal-product-desc {
+      color: #475569;
+      font-size: 19px;
+      line-height: 1.6;
+    }
+    .modal-product-price {
+      color: #2563eb;
+      font-weight: 700;
+      font-size: 20px;
+      margin-top: 10px;
+    }
+    .modal-slider-container {
+      margin-top: 28px;
+      border-top: 2px solid #e5eaf2;
+      padding-top: 24px;
+    }
+    .modal-slider-title {
+      font-weight: 700;
+      margin-bottom: 16px;
+      font-size: 19px;
+    }
+    .modal-slider {
+      display: flex;
+      gap: 14px;
+      overflow-x: auto;
+      padding-bottom: 10px;
+    }
+    .modal-slider-item {
+      min-width: 120px;
+      background: #f8faff;
+      border: 2px solid #e5eaf2;
+      border-radius: 16px;
+      padding: 10px;
+      cursor: pointer;
+      transition: 0.15s;
+      flex-shrink: 0;
+    }
+    .modal-slider-item:hover {
+      border-color: #2563eb;
+      background: #f0f6ff;
+    }
+    .modal-slider-item img {
+      width: 100%;
+      height: 80px;
+      object-fit: contain;
+      background: #fff;
+      border-radius: 12px;
+    }
+    .modal-slider-item p {
+      font-size: 13px;
+      margin-top: 8px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-weight: 500;
+    }
+    /* live chat */
+    .live-chat-btn {
+      position: fixed;
+      right: 30px;
+      bottom: 30px;
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #2563eb;
+      color: #fff;
+      font-size: 30px;
+      box-shadow: 0 12px 35px rgba(37, 99, 235, 0.40);
+      z-index: 9998;
+      transition: 0.25s;
+      border: none;
+      cursor: pointer;
+    }
+    .live-chat-btn:hover {
+      transform: scale(1.08);
+      background: #1d4ed8;
+    }
+
+    /* WhatsApp Button - Only on Mobile */
+    .whatsapp-float {
+      position: fixed;
+      left: 30px;
+      bottom: 30px;
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #25D366;
+      color: #fff;
+      font-size: 36px;
+      box-shadow: 0 12px 35px rgba(37, 211, 102, 0.45);
+      z-index: 9997;
+      transition: 0.25s;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.08);
+      background: #1da851;
+    }
+
+    /* Hide WhatsApp on desktop (screen width > 768px) */
+    @media (min-width: 769px) {
+      .whatsapp-float {
+        display: none !important;
+      }
+    }
+
+    /* Show WhatsApp only on mobile (screen width <= 768px) */
+    @media (max-width: 768px) {
+      .whatsapp-float {
+        display: flex !important;
+      }
+      /* Adjust live chat button position on mobile to not overlap */
+      .live-chat-btn {
+        right: 20px;
+        bottom: 20px;
+        width: 58px;
+        height: 58px;
+        font-size: 26px;
+      }
+      .whatsapp-float {
+        left: 20px;
+        bottom: 20px;
+        width: 58px;
+        height: 58px;
+        font-size: 30px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .live-chat-btn {
+        width: 52px;
+        height: 52px;
+        font-size: 22px;
+        right: 16px;
+        bottom: 16px;
+      }
+      .whatsapp-float {
+        width: 52px;
+        height: 52px;
+        font-size: 26px;
+        left: 16px;
+        bottom: 16px;
+      }
+    }
+
+    /* responsive */
+    @media (max-width: 1100px) {
+      .product-grid { grid-template-columns: repeat(4, 1fr); }
+      .roadmap-grid { grid-template-columns: repeat(2, 1fr); }
+      .support-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 850px) {
+      body { font-size: 16px; }
+      .container { padding: 0 20px; }
+      .hero h1 { font-size: 42px; }
+      .hero-subtitle { font-size: 20px; }
+      .content-card { padding: 32px 24px; }
+      .content-card h2 { font-size: 32px; }
+      .content-card p { font-size: 18px; }
+      .content-card li { font-size: 17px; }
+      .section-heading h2 { font-size: 34px; }
+      .cta h2 { font-size: 34px; }
+      .cta p { font-size: 18px; }
+      .logo { font-size: 28px; }
+    }
+    @media (max-width: 700px) {
+      .navbar { flex-direction: column; align-items: flex-start; }
+      .nav-tag { font-size: 14px; padding: 8px 16px; white-space: normal; }
+      .hero h1 { font-size: 34px; }
+      .hero-buttons { flex-direction: column; width: 100%; }
+      .btn { width: 100%; justify-content: center; font-size: 17px; padding: 16px 24px; }
+      .trust-strip { grid-template-columns: 1fr 1fr; }
+      .trust-item { border-bottom: 2px solid #e8edf4; padding: 20px; }
+      .trust-item:nth-child(2) { border-right: none; }
+      .trust-item strong { font-size: 17px; }
+      .trust-item span { font-size: 14px; }
+      .section { margin: 50px 0; }
+      .roadmap-box { padding: 24px 18px; }
+      .roadmap-grid { grid-template-columns: 1fr; }
+      .roadmap-step { min-height: auto; padding: 22px; }
+      .roadmap-step h3 { font-size: 20px; }
+      .roadmap-step p { font-size: 16px; }
+      .product-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+      .product-card h3 { font-size: 15px; }
+      .support-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+      .support-card { padding: 22px 16px; }
+      .support-card h3 { font-size: 18px; }
+      .support-card p { font-size: 15px; }
+      .audience-grid { grid-template-columns: 1fr; }
+      .audience-card h3 { font-size: 19px; }
+      .cta { padding: 40px 24px; }
+      .cta h2 { font-size: 28px; }
+      .cta p { font-size: 16px; }
+      .section-heading h2 { font-size: 28px; }
+      .section-heading p { font-size: 17px; }
+      .modal-content { padding: 22px; }
+      .modal-product-title { font-size: 26px; }
+      .products-title { font-size: 26px; }
+      .content-card ul { padding-left: 0; }
+      .content-card li { text-align: center; font-size: 16px; }
+      .content-card h3 { font-size: 22px; }
+      .content-card p { font-size: 17px; }
+      .footer p { font-size: 14px; }
+    }
+    @media (max-width: 480px) {
+      .hero h1 { font-size: 28px; }
+      .trust-item strong { font-size: 15px; }
+      .trust-item span { font-size: 12px; }
+      .product-card h3 { font-size: 13px; }
+      .product-card p { font-size: 11px; }
+      .support-card h3 { font-size: 16px; }
+      .support-card p { font-size: 13px; }
+      .content-card h2 { font-size: 26px; }
+      .content-card h3 { font-size: 19px; }
+      .content-card p { font-size: 15px; }
+      .content-card li { font-size: 14px; }
+      .modal-content { padding: 16px; }
+      .modal-product-title { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header class="navbar">
+    <div class="logo">
+      <i class="fas fa-boxes"></i>
+      <div>FCExport<small>FAIZACRAFT EXPORT</small></div>
+    </div>
+    <div class="nav-tag">
+      <i class="fas fa-globe-americas"></i> Worldwide Wholesale · USA Buyers
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-label">
+        <i class="fas fa-briefcase"></i> B2B WHOLESALE · EXPORT · DIGITAL MARKETING
+      </div>
+      <h1><span>Buy in Bulk.</span> We Help You Sell.</h1>
+      <p class="hero-subtitle">
+        Source unique antique, vintage and decorative products from FCExport
+        and build your product business with manufacturing, export and
+        digital marketing support.
+      </p>
+      <div class="hero-buttons">
+        <a href="#products" class="btn btn-primary">
+          <i class="fas fa-box-open"></i> View Wholesale Products
+        </a>
+        <a href="#" class="btn btn-secondary" id="catalogChatBtn">
+          <i class="fas fa-envelope"></i> Request Wholesale Catalog
+        </a>
+      </div>
+    </div>
+    <div class="hero-banner">
+      <img src="https://wholesseller.rk9869017.workers.dev/image1.jpeg" alt="FCExport wholesale antique products">
+    </div>
+  </section>
+
+  <div class="trust-strip">
+    <div class="trust-item"><i class="fas fa-boxes"></i><strong>Bulk Wholesale</strong><span>Competitive pricing</span></div>
+    <div class="trust-item"><i class="fas fa-industry"></i><strong>Manufacturing</strong><span>Custom & OEM options</span></div>
+    <div class="trust-item"><i class="fas fa-globe"></i><strong>Export Support</strong><span>International shipping</span></div>
+    <div class="trust-item"><i class="fas fa-chart-line"></i><strong>Marketing Support</strong><span>Google Ads expertise</span></div>
+  </div>
+
+  <section class="section">
+    <div class="section-heading">
+      <div class="eyebrow">OUR PROCESS</div>
+      <h2>From Bulk Order to Business Growth</h2>
+      <p>We make the wholesale process simple — from choosing products and placing your order to manufacturing, export and helping you understand how to sell online.</p>
+    </div>
+    <div class="roadmap-box">
+      <div class="roadmap-title"><i class="fas fa-route"></i> How It Works</div>
+      <div class="roadmap-grid">
+        <div class="roadmap-step">
+          <div class="step-number">1</div>
+          <h3>Choose Your Products</h3>
+          <p>Browse our wholesale catalog or tell us what type of antique, vintage or decorative products you are looking for.</p>
+        </div>
+        <div class="roadmap-step">
+          <div class="step-number">2</div>
+          <h3>Place Your Bulk Order</h3>
+          <p>Select your quantities and get competitive wholesale pricing based on your order size and requirements.</p>
+        </div>
+        <div class="roadmap-step">
+          <div class="step-number">3</div>
+          <h3>We Manufacture & Export</h3>
+          <p>We handle manufacturing, quality checking, packaging and export preparation before your order is shipped.</p>
+        </div>
+        <div class="roadmap-step">
+          <div class="step-number">4</div>
+          <h3>You Sell. We Help You Grow.</h3>
+          <p>Sell through your website, marketplace, retail store or other channels. We can support you with digital marketing and Google Ads knowledge.</p>
+        </div>
+      </div>
+      <div class="roadmap-footer"><i class="fas fa-handshake"></i>You buy in bulk. We supply the products and help you sell.</div>
+    </div>
+  </section>
+
+  <section class="section" id="products">
+    <div class="products-header">
+      <div class="products-title"><i class="fas fa-cubes"></i> Featured Wholesale Products</div>
+      <div class="wholesale-tag"><i class="fas fa-tag"></i> Wholesale Ready</div>
+    </div>
+    <div class="product-grid" id="productGrid">
+      <!-- cards injected from js -->
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-heading" style="max-width: 100%; text-align: center; margin-left: auto; margin-right: auto;">
+      <div class="eyebrow">WHY FCEXPORT</div>
+      <h2>More Than Just a Wholesale Supplier</h2>
+      <p style="max-width: 850px; margin: 0 auto; font-size: 20px;">We understand that finding products is only the first step. A successful product business also needs good presentation, marketing and customers.</p>
+    </div>
+    <div class="content-card">
+      <h2>The Complete Wholesale Growth Partnership</h2>
+      <p><strong>FCExport (FaizaCraft Export)</strong> is an India-based manufacturer and exporter of handcrafted antique, vintage and decorative products.</p>
+      <p>We work with retailers, online sellers, importers, distributors and entrepreneurs who want to purchase unique products in bulk and sell them in their own markets.</p>
+      <p>Our model is simple: <strong>You purchase products from us in bulk, we manufacture and export them, and we support you with product and digital marketing knowledge.</strong></p>
+      
+      <h3>What Makes FCExport Different?</h3>
+      <p>Many suppliers focus only on manufacturing and shipping products. We believe a stronger wholesale relationship can offer more value.</p>
+      <p>Our team also has experience in <strong>Google Ads, digital marketing, online advertising and customer acquisition.</strong> Because of this, we understand not only how to source products but also how products can be presented and promoted online.</p>
+      <p>We can share practical ideas with our wholesale partners around product selection, product positioning, online advertising and digital marketing.</p>
+
+      <h3>How the Wholesale Process Works</h3>
+      <ul>
+        <li><strong>Choose your products:</strong> Browse our catalog or tell us what type of products you are looking for.</li>
+        <li><strong>Discuss quantities:</strong> Tell us your required quantity, target market and product requirements.</li>
+        <li><strong>Place your bulk order:</strong> Get wholesale pricing based on your order quantity and requirements.</li>
+        <li><strong>Manufacturing & quality:</strong> We manufacture and prepare the products according to the agreed specifications.</li>
+        <li><strong>Export:</strong> We prepare the order for international shipment and handle the export process from India.</li>
+        <li><strong>You sell in your market:</strong> Sell through your website, marketplaces, retail stores, distributors or other channels.</li>
+        <li><strong>We help you grow:</strong> Our digital marketing and Google Ads experience can help you understand online promotion and customer acquisition.</li>
+      </ul>
+
+      <h3>Why This Model Works</h3>
+      <p>A successful product business needs more than a good supplier. You need the right product, competitive pricing, attractive presentation, traffic and customers.</p>
+      <p>FCExport can support you on the product side while also bringing digital marketing knowledge to the partnership.</p>
+      <p>This gives our wholesale partners an opportunity to build a complete product business instead of simply purchasing products from a supplier.</p>
+
+      <h3>Digital Marketing & Google Ads Support</h3>
+      <p>Online selling can be difficult when you do not know how to reach the right customers.</p>
+      <p>Our experience with <strong>Google Ads and digital marketing</strong> allows us to understand how online traffic, advertising and product positioning work together.</p>
+      <p>Depending on the partnership, we can share ideas around Google Ads campaigns, product positioning, landing pages, advertising strategy and customer acquisition.</p>
+
+      <h3>OEM & Custom Products</h3>
+      <p>Looking for something different? We also work on custom product requirements, OEM projects and private-label opportunities.</p>
+      <p>You can discuss your preferred design, size, finish, packaging or branding requirements with our team.</p>
+
+      <h3>Our Goal</h3>
+      <p>We are not looking for one-time transactions only. We want to build long-term relationships with businesses that are looking for a reliable product and export partner.</p>
+      <p><strong>You focus on selling in your market. We focus on supplying the products and supporting your growth.</strong></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <div class="eyebrow">OUR SUPPORT</div>
+      <h2>What You Get With FCExport</h2>
+    </div>
+    <div class="support-grid">
+      <div class="support-card"><div class="support-icon"><i class="fas fa-boxes"></i></div><h3>Bulk Wholesale</h3><p>Competitive wholesale pricing for bulk orders and repeat buyers.</p></div>
+      <div class="support-card"><div class="support-icon"><i class="fas fa-industry"></i></div><h3>Manufacturing</h3><p>Product manufacturing, custom development and OEM opportunities.</p></div>
+      <div class="support-card"><div class="support-icon"><i class="fas fa-globe"></i></div><h3>Export Support</h3><p>Packaging and international export preparation from India.</p></div>
+      <div class="support-card"><div class="support-icon"><i class="fas fa-chart-line"></i></div><h3>Digital Marketing</h3><p>Google Ads experience and practical online marketing guidance.</p></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <div class="eyebrow">WHO WE WORK WITH</div>
+      <h2>Built For Businesses That Want To Grow</h2>
+    </div>
+    <div class="audience-grid">
+      <div class="audience-card"><h3><i class="fas fa-laptop"></i> E-commerce Sellers</h3><p>For businesses looking for unique products to sell through their own websites and online marketplaces.</p></div>
+      <div class="audience-card"><h3><i class="fas fa-store"></i> Retailers & Boutiques</h3><p>For stores looking to add distinctive antique, vintage and decorative products to their collections.</p></div>
+      <div class="audience-card"><h3><i class="fas fa-truck"></i> Importers & Distributors</h3><p>For businesses looking for an India-based manufacturing and export partner.</p></div>
+      <div class="audience-card"><h3><i class="fas fa-lightbulb"></i> Online Entrepreneurs</h3><p>For entrepreneurs who want to start or expand a product-based business.</p></div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Ready to Build Your Product Line?</h2>
+    <p>Tell us what products you are looking for, your approximate quantity and your target market. We will help you explore the available wholesale options.</p>
+    <a href="#" class="btn btn-primary" id="ctaCatalogBtn"><i class="fas fa-file-download"></i> Request Wholesale Catalog</a>
+  </section>
+
+  <footer class="footer">
+    <p><i class="fas fa-box-open"></i> <strong>FCExport</strong> · FaizaCraft Export &nbsp; | &nbsp; <i class="fas fa-globe"></i> International Wholesale &nbsp; | &nbsp; <i class="fas fa-envelope"></i> bulk@fc-exports.com</p>
+    <p style="margin-top:8px; font-size:16px;">You buy in bulk · We manufacture & export · We help you grow</p>
+  </footer>
+</div>
+
+<!-- Modal -->
+<div class="modal-overlay" id="productModal">
+  <div class="modal-content">
+    <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
+    <img class="modal-product-image" id="modalImage" src="" alt="Product">
+    <h2 class="modal-product-title" id="modalTitle"></h2>
+    <p class="modal-product-desc" id="modalDesc"></p>
+    <p class="modal-product-price" id="modalPrice"></p>
+    <div class="modal-slider-container">
+      <p class="modal-slider-title"><i class="fas fa-th-large"></i> More Products</p>
+      <div class="modal-slider" id="modalSlider"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Live Chat Button (Jivosite) -->
+<a href="#" class="live-chat-btn" id="liveChatBtn" title="Chat with FCExport"><i class="fas fa-comment-dots"></i></a>
+
+<!-- WhatsApp Button - Only on Mobile -->
+<a href="https://wa.me/12052898734" class="whatsapp-float" id="whatsappBtn" title="Chat on WhatsApp" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Jivosite Widget -->
+<script src="//code.jivosite.com/widget/rpKHxBxpPT" async></script>
+
+<script>
+  // Function to open Jivosite chat
+  function openChat() {
+    if (typeof jivo_api !== 'undefined' && jivo_api.open) {
+      jivo_api.open();
+    } else {
+      setTimeout(function() {
+        if (typeof jivo_api !== 'undefined' && jivo_api.open) {
+          jivo_api.open();
+        }
+      }, 1500);
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('catalogChatBtn').addEventListener('click', function(e) {
+      e.preventDefault();
+      openChat();
+    });
+
+    document.getElementById('ctaCatalogBtn').addEventListener('click', function(e) {
+      e.preventDefault();
+      openChat();
+    });
+
+    document.getElementById('liveChatBtn').addEventListener('click', function(e) {
+      e.preventDefault();
+      openChat();
+    });
+  });
+</script>
+
+<script>
+  const products = [
+    { name: "Regent Wooden Table Telephone", image: "https://wholesseller.rk9869017.workers.dev/regent.jpg", desc: "Vintage style wooden table telephone with rotary dial.", price: "Price on enquiry" },
+    { name: "Armillary Sphere Sundial", image: "https://wholesseller.rk9869017.workers.dev/ARMILIARY.jpg", desc: "20 inch armillary sphere sundial in antique brass finish.", price: "Price on enquiry" },
+    { name: "Viking Iron Helmet", image: "https://wholesseller.rk9869017.workers.dev/Viking%20iron%20helmet.jpg", desc: "Vintage style Viking decorative helmet with weathered iron look.", price: "Price on enquiry" },
+    { name: "Brass Hand Bells", image: "https://wholesseller.rk9869017.workers.dev/Brass%20bells.jpg", desc: "Handcrafted brass decorative bells, set of 3.", price: "Price on enquiry" },
+    { name: "Brass Stand Binocular", image: "https://wholesseller.rk9869017.workers.dev/Brass%20stand%20binocular.jpg", desc: "Explorer style brass decorative binocular on stand.", price: "Price on enquiry" },
+    { name: "Ship Wheel Book End", image: "https://wholesseller.rk9869017.workers.dev/Book%20end%20with%20ship%20wheel.jpg", desc: "Nautical inspired book end with ship wheel design.", price: "Price on enquiry" },
+    { name: "Steering Wheel Bottle Opener", image: "https://wholesseller.rk9869017.workers.dev/Bottle%20opener%20steering%20wheel.jpg", desc: "Nautical style decorative bottle opener, wall mount.", price: "Price on enquiry" },
+    { name: "Brass Scale 15 inch", image: "https://wholesseller.rk9869017.workers.dev/Brass%20scale%2015.jpg", desc: "Vintage style brass decorative scale with tray.", price: "Price on enquiry" },
+    { name: "Brass Door Pad Lock", image: "https://wholesseller.rk9869017.workers.dev/Brass%20door%20pad%20lock.jpeg", desc: "Antique style brass pad lock with keyhole.", price: "Price on enquiry" },
+    { name: "Brass Bugle", image: "https://wholesseller.rk9869017.workers.dev/Brass%20bugle.jpg", desc: "Vintage style brass bugle, decorative collectible.", price: "Price on enquiry" },
+    { name: "18 inch Diving Helmet", image: "https://wholesseller.rk9869017.workers.dev/18%20Diving%20Helmet.jpg", desc: "Nautical inspired decorative diving helmet, 18 inch.", price: "Price on enquiry" },
+    { name: "Brass World Globe", image: "https://wholesseller.rk9869017.workers.dev/Brass%20world%20globe%20time.jpg", desc: "Explorer style brass world globe with time dial.", price: "Price on enquiry" },
+    { name: "Wheel Compass", image: "https://wholesseller.rk9869017.workers.dev/Wheel%20compass%20with%20brass%20pole.jpg", desc: "Nautical inspired wheel compass with brass pole.", price: "Price on enquiry" },
+    { name: "Crystal Tripod Floor Lamp", image: "https://wholesseller.rk9869017.workers.dev/image%20(3).png", desc: "Decorative crystal drum shade tripod floor lamp.", price: "Price on enquiry" },
+    { name: "Fancy Wall Lights", image: "https://wholesseller.rk9869017.workers.dev/image%20(4).png", desc: "Decorative interior wall lighting, set of 2.", price: "Price on enquiry" }
+  ];
+
+  const grid = document.getElementById('productGrid');
+  grid.innerHTML = '';
+  products.forEach((p, idx) => {
+    const card = document.createElement('div');
+    card.className = 'product-card';
+    card.dataset.index = idx;
+    card.innerHTML = `
+      <img class="product-img" src="${p.image}" alt="${p.name}" loading="lazy">
+      <h3>${p.name}</h3>
+      <p>${p.desc.slice(0, 35)}${p.desc.length > 35 ? '…' : ''}</p>
+    `;
+    card.addEventListener('click', () => openModal(idx));
+    grid.appendChild(card);
+  });
+
+  const modal = document.getElementById('productModal');
+  const modalClose = document.getElementById('modalClose');
+  const modalImage = document.getElementById('modalImage');
+  const modalTitle = document.getElementById('modalTitle');
+  const modalDesc = document.getElementById('modalDesc');
+  const modalPrice = document.getElementById('modalPrice');
+  const modalSlider = document.getElementById('modalSlider');
+
+  function openModal(index) {
+    const p = products[index];
+    modalImage.src = p.image;
+    modalImage.alt = p.name;
+    modalTitle.textContent = p.name;
+    modalDesc.textContent = p.desc;
+    modalPrice.textContent = p.price;
+    modalSlider.innerHTML = '';
+    products.forEach((item, i) => {
+      const div = document.createElement('div');
+      div.className = 'modal-slider-item';
+      div.innerHTML = `<img src="${item.image}" alt="${item.name}" loading="lazy"><p>${item.name}</p>`;
+      div.addEventListener('click', (e) => { e.stopPropagation(); openModal(i); });
+      modalSlider.appendChild(div);
+    });
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+  modalClose.addEventListener('click', closeModal);
+  modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+</script>
+</body>
+</html>
